@@ -1,0 +1,38 @@
+id: "sequence.participants_non_letters.basic"
+diagram_type: "sequence"
+topic: "participants_non_letters"
+construct: "participants.non_letters"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence participants: non-letters in names"
+intent:
+  - "use punctuation in participant names"
+  - "quote participant names"
+syntax: |
+  @startuml
+  Alice -> "Bob()" : Hello
+  "Bob()" -> "This is very long" as Long
+  Long --> Alice : ok
+  @enduml
+rules:
+  - "Wrap participant names with quotes when they contain special characters"
+  - "Use as <alias> to reference a quoted participant"
+examples:
+  - |
+    @startuml
+    "API Gateway" as GW
+    "Order-Service(v1)" as OS
+    GW -> OS : POST /orders
+    OS --> GW : 201
+    @enduml
+keywords:
+  - "sequence"
+  - "participant"
+  - "quotes"
+  - "alias"
+  - "as"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.4 Use non-letters in participants"
+  page: 5

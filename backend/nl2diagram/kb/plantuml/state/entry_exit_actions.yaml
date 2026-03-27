@@ -1,0 +1,40 @@
+id: "state.description.basic"
+diagram_type: "state"
+topic: "state_description"
+construct: "state.description"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "State descriptions: State : text (multi-line)"
+intent:
+  - "add state description"
+  - "multi-line description"
+  - "state description text"
+syntax: |
+  @startuml
+  [*] --> State1
+  State1 --> [*]
+  State1 : this is a string
+  State1 : this is another string
+  @enduml
+rules:
+  - "Use 'StateName : text' for state descriptions"
+  - "Repeat multiple description lines for the same state to show multi-line text"
+examples:
+  - |
+    @startuml
+    [*] --> LoggingIn
+    LoggingIn : Waiting for user input
+    LoggingIn : Validating credentials
+    LoggingIn --> LoggedIn : success
+    LoggedIn --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "description"
+  - "State :"
+  - "state description"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.24 State description"
+  page: 255

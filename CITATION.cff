@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "PLATO"
+abstract: "A local system for turning natural-language requirements into validated PlantUML behavioral diagrams through a multi-stage LLM pipeline LATO."
+type: software
+license: MIT
+authors:
+  - family-names: "Huang"
+    given-names: "Yike"
+    orcid: "https://orcid.org/0009-0004-5166-1113"
+version: "2.4.0"
+date-released: "2026-03-27"
+repository-code: "https://github.com/Ekay47/PLATO"
+keywords:
+  - natural-language-processing
+  - plantuml
+  - behavioral-diagrams
+  - llm
+  - code-generation

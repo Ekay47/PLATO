@@ -1,0 +1,37 @@
+id: "activity.note.basic"
+diagram_type: "activity"
+topic: "note"
+construct: "annotation.note"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Activity notes: note left/right"
+intent:
+  - "add a note"
+  - "add annotation text"
+  - "note annotation"
+syntax: |
+  @startuml
+  (*) --> "Some action"
+  note right: This action has to be defined
+  @enduml
+rules:
+  - "Single-line notes can use note right: / note left:"
+  - "Keep notes close to the element they describe"
+examples:
+  - |
+    @startuml
+    (*) --> "Validate input"
+    note right: Check required fields and format
+    "Validate input" --> (*)
+    @enduml
+keywords:
+  - "activity"
+  - "note"
+  - "note right"
+  - "note left"
+  - "annotation"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "Activity Diagram: notes"
+  page: 117

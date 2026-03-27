@@ -1,0 +1,184 @@
+QUERY	expansionInput	PAGES	244,597
+CONTEXT	expansionInput	PAGE	244
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+QUERY	expansionOutput	PAGES	244,597
+CONTEXT	expansionOutput	PAGE	244
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----
+9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.12 Expansion [expansionInput, expansionOutput]
+You can add expansion with <<expansionInput>> and <<expansionOutput>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<expansionInput>>
+state entry2 <<expansionInput>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<expansionOutput>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 243 / 606
+----

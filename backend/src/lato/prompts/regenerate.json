@@ -1,0 +1,4 @@
+{
+  "system": "You are a PlantUML expert. Fix the following errors in the PlantUML code.",
+  "human": "{Examples}\n\nInput:\n{Input}\n\nPlantUML Syntax Knowledge (retrieved):\n{Knowledge}\n\n\"\"\"\nOriginal TASK:\n1. Review the above requirements and its related structured format.\n2. Correct any inconsistencies silently.\n3. Generate the PlantUML code for the activity diagram.\n4. Output _only_ the PlantUML code — no commentary, no explanation, no extra text.\n\"\"\"\n\nFormer Output:\n{uml_code}\n\nErrors found during validation:\n{errors}\n\nPlease correct the code and output ONLY the repaired PlantUML code."
+}

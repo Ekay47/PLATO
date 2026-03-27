@@ -1,0 +1,36 @@
+server:
+  host: "127.0.0.1"
+  port: 8147
+  version: "v2.4.0"
+  log_level: "INFO"
+
+llm:
+  api_url: "https://api.openai.com/v1"
+  api_key: "your-api-key-here"
+  model: "gpt-4"
+  mock: false
+
+plantuml:
+  jar_path: "" # Leave empty to automatically search in backend/src/utils
+  jar_timeout_s: 8.0
+  render_timeout_s: 10.0
+  kb_root: "" # Leave empty to use the default knowledge base path
+  kb_max_chars: 6000
+  kb_top_k: 6
+
+corenlp:
+  mode: "external" # 'external' or 'managed'
+  url: "http://127.0.0.1:9000"
+  timeout_s: 3.0
+
+nlp:
+  coref_provider: "fastcoref"
+  dependency_provider: "corenlp"
+  max_prompt_chars: 4000
+  fastcoref_device: "cpu"
+  fastcoref_model_path: "" # Leave empty to automatically download or use default cache
+  fastcoref_cache_dir: ""
+
+huggingface:
+  hub_offline: true
+  transformers_offline: true

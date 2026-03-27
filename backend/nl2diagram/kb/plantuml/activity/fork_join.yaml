@@ -1,0 +1,59 @@
+id: "activity.fork_join.basic"
+diagram_type: "activity"
+topic: "fork_join"
+construct: "concurrency.fork_join"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity concurrency: fork / fork again / end fork"
+intent:
+  - "run in parallel"
+  - "do two things concurrently"
+  - "parallel branches"
+syntax: |
+  @startuml
+  start
+  :Enter parallel block;
+  fork
+    :Task A;
+  fork again
+    :Task B;
+  end fork
+  :Continue after join;
+  stop
+  @enduml
+parameters:
+  - name: "branch_count"
+    type: "integer"
+    required: false
+    default: 2
+    constraints:
+      - "Use fork again to add additional branches"
+    examples:
+      - 2
+      - 3
+rules:
+  - "Every fork block must be closed with end fork"
+  - "Keep each branch sequential; avoid deeply nested constructs inside a fork block"
+examples:
+  - |
+    @startuml
+    start
+    fork
+      :Send email;
+    fork again
+      :Write audit log;
+    end fork
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "fork"
+  - "fork again"
+  - "end fork"
+  - "parallel"
+  - "concurrency"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.10 Parallel processing [fork, fork again, end fork, end merge]"
+  page: 134

@@ -1,0 +1,38 @@
+id: "state.note.basic"
+diagram_type: "state"
+topic: "note"
+construct: "annotation.note"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "State notes: note right of / note over"
+intent:
+  - "add a note next to a state"
+  - "annotate a state machine"
+  - "note on state"
+syntax: |
+  @startuml
+  [*] --> Idle
+  Idle --> Working : start
+  note right of Idle: initial state
+  @enduml
+rules:
+  - "Use note right of / note left of / note over to attach notes to elements"
+  - "Keep notes short; split complex explanations into multiple lines if needed"
+examples:
+  - |
+    @startuml
+    [*] --> Running
+    note over Running: processing
+    Running --> [*] : stop
+    @enduml
+keywords:
+  - "state"
+  - "note"
+  - "note right of"
+  - "note over"
+  - "annotation"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.15 Some other notes"
+  page: 15

@@ -1,0 +1,7 @@
+LATO-main/
+frontend-ch_zn/
+plantuml-editor/
+test/
+
+*.log
+Thumbs.db

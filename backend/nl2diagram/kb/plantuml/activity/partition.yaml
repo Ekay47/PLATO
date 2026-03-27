@@ -1,0 +1,63 @@
+id: "activity.partition.basic"
+diagram_type: "activity"
+topic: "partition"
+construct: "lanes.partition"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity swimlanes: partition { ... }"
+intent:
+  - "swimlanes"
+  - "split steps by role/team"
+  - "swimlane partition"
+syntax: |
+  @startuml
+  partition Conductor {
+    (*) --> "Climbs on Platform"
+    --> "Bows"
+  }
+  partition Audience #LightSkyBlue {
+    "Bows" --> "Applauds"
+  }
+  @enduml
+parameters:
+  - name: "partition_name"
+    type: "string"
+    required: true
+    default: null
+    constraints:
+      - "Put it after partition Name {"
+    examples:
+      - "Conductor"
+      - "Audience"
+  - name: "partition_color"
+    type: "string"
+    required: false
+    default: null
+    constraints:
+      - "Optional, e.g. #LightSkyBlue"
+    examples:
+      - "#LightSkyBlue"
+rules:
+  - "Close each partition block with }"
+  - "Activities will be placed in the most recently declared partition"
+examples:
+  - |
+    @startuml
+    partition User {
+      (*) --> "Submit request"
+    }
+    partition System {
+      "Submit request" --> "Validate"
+    }
+    @enduml
+keywords:
+  - "activity"
+  - "partition"
+  - "swimlane"
+  - "lane"
+  - "swimlanes"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "5.9 Partition 5 ACTIVITY DIAGRAM (LEGACY)"
+  page: 118

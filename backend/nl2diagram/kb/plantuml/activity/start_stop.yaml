@@ -1,0 +1,36 @@
+id: "activity.start_stop.basic"
+diagram_type: "activity"
+topic: "start_stop"
+construct: "flow.start_stop"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Activity start/stop/end"
+intent:
+  - "denote the beginning and the end of an activity diagram"
+  - "start stop keywords"
+syntax: |
+  @startuml
+  start
+  :Hello world;
+  stop
+  @enduml
+rules:
+  - "Use start and stop to denote the beginning and end of a diagram"
+examples:
+  - |
+    @startuml
+    start
+    :Validate input;
+    :Persist;
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "start"
+  - "stop"
+  - "end"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.2 Start/Stop/End"
+  page: 123

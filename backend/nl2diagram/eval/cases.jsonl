@@ -1,0 +1,7 @@
+{"id":"act_001","diagram_type":"activity","nl":"If the input is valid, persist it; otherwise show an error.","must_include":["if","else","endif"],"notes":""}
+{"id":"act_002","diagram_type":"activity","nl":"Send an email and write an audit log in parallel, then stop.","must_include":["fork","end fork"],"notes":""}
+{"id":"act_003","diagram_type":"activity","nl":"Repeat reading data and generating diagrams until there is no more data.","must_include":["repeat","repeat while"],"notes":""}
+{"id":"seq_001","diagram_type":"sequence","nl":"A user clicks submit; the frontend calls the backend API and returns the result.","must_include":["participant","->","-->"],"notes":""}
+{"id":"seq_002","diagram_type":"sequence","nl":"On failure return an error; on success return 200; retry up to 3 times.","must_include":["alt","else","end","loop"],"notes":""}
+{"id":"st_001","diagram_type":"state","nl":"From Idle to Processing; when done go back to Idle; cancel ends the flow.","must_include":["[*]","-->"],"notes":""}
+{"id":"st_002","diagram_type":"state","nl":"Order has composite substates Created, Paid, and Shipped.","must_include":["state","{","}"],"notes":""}

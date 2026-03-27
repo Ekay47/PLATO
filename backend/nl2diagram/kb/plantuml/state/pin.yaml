@@ -1,0 +1,43 @@
+id: "state.pin.basic"
+diagram_type: "state"
+topic: "pin"
+construct: "state.pin"
+complexity: "intermediate"
+requires_closure: false
+version: "1.2025.0"
+title: "State pins: <<inputPin>> / <<outputPin>>"
+intent:
+  - "model input and output pins"
+  - "inputPin and outputPin pseudo-states"
+syntax: |
+  @startuml
+  state inputPin <<inputPin>>
+  state outputPin <<outputPin>>
+  [*] --> inputPin
+  inputPin --> State2
+  State2 --> outputPin
+  outputPin --> [*]
+  @enduml
+rules:
+  - "Declare pins using <<inputPin>> and <<outputPin>> stereotypes"
+  - "Pins are connected with transitions like normal states"
+examples:
+  - |
+    @startuml
+    state In <<inputPin>>
+    state Out <<outputPin>>
+    [*] --> In
+    In --> Processing
+    Processing --> Out
+    Out --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "inputPin"
+  - "outputPin"
+  - "<<inputPin>>"
+  - "<<outputPin>>"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.11 Pin [inputPin, outputPin]"
+  page: 243

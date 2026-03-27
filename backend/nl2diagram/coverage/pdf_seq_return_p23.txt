@@ -1,0 +1,48 @@
+QUERY	1.26 Return	PAGES	23,592
+CONTEXT	1.26 Return	PAGE	23
+1.26 Return 1 SEQUENCE DIAGRAM
+Autoactivation is possible and works with the return keywords:
+@startuml
+autoactivate on
+alice -> bob : hello
+bob -> bob : self call
+bill -> bob #005500 : hello from thread 2
+bob -> george ** : create
+return done in thread 2
+return rc
+bob -> george !! : delete
+return success
+@enduml
+1.26 Return
+Command return generates a return message with optional text label.
+The return point is that which caused the most recent life-line activation.
+The syntax is return label where label if provided is any string acceptable for conventional messages.
+@startuml
+Bob -> Alice : hello
+activate Alice
+Alice -> Alice : some action
+PlantUML Language Reference Guide (1.2025.0) 22 / 606
+----
+1.26 Return 1 SEQUENCE DIAGRAM
+Autoactivation is possible and works with the return keywords:
+@startuml
+autoactivate on
+alice -> bob : hello
+bob -> bob : self call
+bill -> bob #005500 : hello from thread 2
+bob -> george ** : create
+return done in thread 2
+return rc
+bob -> george !! : delete
+return success
+@enduml
+1.26 Return
+Command return generates a return message with optional text label.
+The return point is that which caused the most recent life-line activation.
+The syntax is return label where label if provided is any string acceptable for conventional messages.
+@startuml
+Bob -> Alice : hello
+activate Alice
+Alice -> Alice : some action
+PlantUML Language Reference Guide (1.2025.0) 22 / 606
+----

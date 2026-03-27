@@ -1,0 +1,11 @@
+@startuml
+participant A
+participant B
+participant C
+
+par
+  A -> B: step1
+and
+  A -> C: step2
+end
+@enduml

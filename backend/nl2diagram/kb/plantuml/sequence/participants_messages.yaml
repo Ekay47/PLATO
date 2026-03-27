@@ -1,0 +1,53 @@
+id: "sequence.participants_messages.basic"
+diagram_type: "sequence"
+topic: "participants_messages"
+construct: "participants.declaration_and_messages"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence participants and messages: participant / actor + synchronous calls"
+intent:
+  - "A calls B"
+  - "client requests server"
+  - "participant message"
+syntax: |
+  @startuml
+  actor User as U
+  participant "Frontend" as FE
+  participant "Backend" as BE
+
+  U -> FE: Click submit
+  FE -> BE: POST /api/submit
+  BE --> FE: 200 OK
+  FE --> U: Show result
+  @enduml
+parameters:
+  - name: "participant_alias"
+    type: "string"
+    required: false
+    default: null
+    constraints:
+      - "Prefer using as aliases for participants to reuse names consistently"
+rules:
+  - "Use participant aliases consistently to avoid duplicate declarations"
+  - "Use --> for return messages when applicable"
+examples:
+  - |
+    @startuml
+    participant App as A
+    participant Service as S
+    A -> S: request()
+    S --> A: response
+    @enduml
+keywords:
+  - "sequence"
+  - "participant"
+  - "actor"
+  - "message"
+  - "->"
+  - "-->"
+  - "sequence diagram"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "Sequence Diagram: participant declaration examples"
+  page: 4

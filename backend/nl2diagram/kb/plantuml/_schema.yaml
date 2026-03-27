@@ -1,0 +1,75 @@
+version: "1.0"
+description: "PlantUML behavioral diagram knowledge chunk schema (for retrieval and prompt assembly)"
+
+fields:
+  id:
+    type: string
+    required: true
+    notes: "Globally unique; recommended: diagram_type.construct.variant"
+  diagram_type:
+    type: enum
+    required: true
+    values: ["activity", "sequence", "state"]
+  version:
+    type: string
+    required: false
+    notes: "Document or chunk version, e.g. 1.2025.0"
+  topic:
+    type: string
+    required: true
+    notes: "Human-readable topic, e.g. if_else / loop_alt / composite_state"
+  construct:
+    type: string
+    required: false
+    notes: "Normalized construct name for filtering/aggregation, e.g. loop.while / fragment.alt_else"
+  complexity:
+    type: enum
+    required: false
+    values: ["basic", "intermediate", "advanced"]
+  requires_closure:
+    type: boolean
+    required: false
+    notes: "Whether a block must be closed (e.g. if/endif, alt/end, fork/end fork)"
+  compose_with:
+    type: list
+    required: false
+    notes: "Recommended constructs to compose with"
+  conflicts:
+    type: list
+    required: false
+    notes: "Constructs that conflict or are not recommended together"
+  title:
+    type: string
+    required: true
+  intent:
+    type: list
+    required: false
+    notes: "Natural-language intents for recall"
+  syntax:
+    type: string
+    required: true
+    notes: "Minimal runnable PlantUML snippet (recommended to include @startuml/@enduml)"
+  parameters:
+    type: list
+    required: false
+    item_fields: ["name", "type", "required", "default", "constraints", "examples"]
+  rules:
+    type: list
+    required: false
+    notes: "Hard constraints and pitfalls to reduce generation errors"
+  examples:
+    type: list
+    required: false
+    notes: "1-2 short examples; should be directly renderable"
+  anti_examples:
+    type: list
+    required: false
+    notes: "Common mistakes and reasons; used for corrective prompting"
+  keywords:
+    type: list
+    required: true
+    notes: "Retrieval keywords; keep concise and consistent"
+  source:
+    type: object
+    required: false
+    fields: ["doc", "section", "page"]

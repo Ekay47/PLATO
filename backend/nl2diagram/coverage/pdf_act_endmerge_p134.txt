@@ -1,0 +1,122 @@
+QUERY	end merge	PAGES	134,135,136,595
+CONTEXT	end merge	PAGE	134
+6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+6.10 Parallel processing [fork, fork again, end fork, end merge]
+You can use fork, fork again and end fork or end merge keywords to denote parallel processing.
+6.10.1 Simple fork
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end fork
+stop
+@enduml
+6.10.2 fork with end merge
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end merge
+stop
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 133 / 606
+----
+6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+6.10 Parallel processing [fork, fork again, end fork, end merge]
+You can use fork, fork again and end fork or end merge keywords to denote parallel processing.
+6.10.1 Simple fork
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end fork
+stop
+@enduml
+6.10.2 fork with end merge
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end merge
+stop
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 133 / 606
+----
+6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+6.10 Parallel processing [fork, fork again, end fork, end merge]
+You can use fork, fork again and end fork or end merge keywords to denote parallel processing.
+6.10.1 Simple fork
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end fork
+stop
+@enduml
+6.10.2 fork with end merge
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end merge
+stop
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 133 / 606
+----
+6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+6.10 Parallel processing [fork, fork again, end fork, end merge]
+You can use fork, fork again and end fork or end merge keywords to denote parallel processing.
+6.10.1 Simple fork
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end fork
+stop
+@enduml
+6.10.2 fork with end merge
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end merge
+stop
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 133 / 606
+----
+6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+6.10 Parallel processing [fork, fork again, end fork, end merge]
+You can use fork, fork again and end fork or end merge keywords to denote parallel processing.
+6.10.1 Simple fork
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;
+end fork
+stop
+@enduml
+6.10.2 fork with end merge
+@startuml
+start
+fork
+:action 1;
+fork again
+:action 2;

@@ -1,0 +1,193 @@
+﻿version: "1.0"
+doc:
+  path: "f:/Project/2026Projects/PLATO/backend/nl2diagram/PlantUML_Language_Reference_Guide_en.pdf"
+  version: "1.2025.0"
+  title: "PlantUML Language Reference Guide"
+
+constructs:
+  activity:
+    - construct: "flow.start_stop"
+      topic: "start_stop"
+      queries: ["start", "stop", "end"]
+      required: true
+    - construct: "flow.action_and_arrow"
+      topic: "action_arrow"
+      queries: ["6.1 Simple action", "Activities label starts with :", ":Hello world;"]
+      required: true
+    - construct: "branch.if_else"
+      topic: "if_else"
+      queries: ["if (", "endif", "if (...) then", "else ("]
+      required: true
+    - construct: "branch.elseif"
+      topic: "elseif"
+      queries: ["elseif", "else if", "endif"]
+      required: true
+    - construct: "loop.while"
+      topic: "while_loop"
+      queries: ["6.9 While loop", "while (", "endwhile"]
+      required: true
+    - construct: "loop.repeat"
+      topic: "repeat_loop"
+      queries: ["repeat", "repeat while"]
+      required: true
+    - construct: "concurrency.fork_join"
+      topic: "fork_join"
+      queries: ["fork again", "end fork", "end merge"]
+      required: true
+    - construct: "concurrency.end_merge"
+      topic: "end_merge"
+      queries: ["end merge", "fork again", "end fork"]
+      required: true
+    - construct: "lanes.partition"
+      topic: "partition"
+      queries: ["partition", "swimlane"]
+      required: false
+    - construct: "annotation.note"
+      topic: "note"
+      queries: ["note"]
+      required: false
+
+  sequence:
+    - construct: "participants.declaration_and_messages"
+      topic: "participants_messages"
+      queries: ["participant Alice", "actor", "->", "-->"]
+      required: true
+    - construct: "participants.multiline_declaration"
+      topic: "participants_multiline"
+      queries: ["Declaring participant on multiline", "participant", "as"]
+      required: true
+    - construct: "participants.non_letters"
+      topic: "participants_non_letters"
+      queries: ["Use non-letters in participants", "participant", "\""]
+      required: true
+    - construct: "message.self"
+      topic: "message_to_self"
+      queries: ["Message to Self", "->", "participant"]
+      required: true
+    - construct: "message.return"
+      topic: "return_message"
+      queries: ["return", "-->", "response"]
+      required: true
+    - construct: "message.async"
+      topic: "async_message"
+      queries: ["->>", "asynchronous"]
+      required: true
+    - construct: "message.arrow_styles"
+      topic: "arrow_styles"
+      queries: ["Change arrow style", "->", "-->", "->>"]
+      required: true
+    - construct: "fragment.alt_else"
+      topic: "alt"
+      queries: ["alt", "else", "end", "alt successful case"]
+      required: true
+    - construct: "fragment.opt"
+      topic: "opt"
+      queries: ["opt", "end"]
+      required: true
+    - construct: "fragment.loop"
+      topic: "loop"
+      queries: ["loop", "end", "loop 1000 times"]
+      required: true
+    - construct: "fragment.group"
+      topic: "group"
+      queries: ["group", "end", "Grouping message"]
+      required: true
+    - construct: "fragment.break"
+      topic: "break"
+      queries: ["break", "end", "Grouping message"]
+      required: true
+    - construct: "fragment.critical"
+      topic: "critical"
+      queries: ["critical", "end", "Grouping message"]
+      required: true
+    - construct: "lifeline.activation"
+      topic: "activation"
+      queries: ["activate", "deactivate", "Lifeline Activation"]
+      required: true
+    - construct: "lifeline.create_destroy"
+      topic: "create_destroy"
+      queries: ["create", "destroy", "Lifeline Activation and Destruction"]
+      required: true
+    - construct: "layout.newpage"
+      topic: "newpage"
+      queries: ["newpage", "Splitting diagrams"]
+      required: true
+    - construct: "annotation.note"
+      topic: "note"
+      queries: ["note"]
+      required: false
+    - construct: "fragment.par"
+      topic: "par"
+      queries: ["par", "end"]
+      required: false
+    - construct: "fragment.ref"
+      topic: "ref"
+      queries: ["ref", "end"]
+      required: false
+
+  state:
+    - construct: "transition.basic"
+      topic: "basic_states_transitions"
+      queries: ["9.1 Simple State", "[*]", "-->"]
+      required: true
+    - construct: "state.description"
+      topic: "state_description"
+      queries: ["State1 : this is a string", "hide empty description"]
+      required: true
+    - construct: "state.composite"
+      topic: "composite_state"
+      queries: ["9.3 Composite state", "state", "{", "}"]
+      required: true
+    - construct: "history.state"
+      topic: "history"
+      queries: ["9.5 History", "[H]", "[H*]"]
+      required: true
+    - construct: "state.fork_join"
+      topic: "fork_join"
+      queries: ["9.6 Fork", "fork", "join"]
+      required: true
+    - construct: "state.concurrent"
+      topic: "concurrent_state"
+      queries: ["9.7 Concurrent state", "||", "--"]
+      required: true
+    - construct: "state.concurrent.separator_horizontal"
+      topic: "concurrent_horizontal_separator"
+      queries: ["9.7.1 Horizontal separator", "--"]
+      required: true
+    - construct: "state.concurrent.separator_vertical"
+      topic: "concurrent_vertical_separator"
+      queries: ["9.7.2 Vertical separator", "||"]
+      required: true
+    - construct: "state.choice"
+      topic: "choice"
+      queries: ["9.8 Conditional", "[choice]"]
+      required: true
+    - construct: "state.entry_exit_point"
+      topic: "entry_exit_point"
+      queries: ["9.10 Point", "entryPoint", "exitPoint"]
+      required: true
+    - construct: "state.pin"
+      topic: "pin"
+      queries: ["9.11 Pin", "inputPin", "outputPin"]
+      required: true
+    - construct: "state.expansion"
+      topic: "expansion"
+      queries: ["9.12 Expansion", "expansionInput", "expansionOutput"]
+      required: true
+    - construct: "state.arrow_direction"
+      topic: "arrow_direction"
+      queries: ["9.13 Arrow direction", "left", "right", "up", "down"]
+      required: true
+    - construct: "state.long_name"
+      topic: "long_name"
+      queries: ["9.4 Long name"]
+      required: true
+    - construct: "state.stereotypes"
+      topic: "stereotypes"
+      queries: ["9.9 Stereotypes", "<<start>>", "<<end>>", "<<fork>>", "<<join>>", "<<choice>>", "<<history>>"]
+      required: true
+    - construct: "annotation.note"
+      topic: "note"
+      queries: ["note"]
+      required: false
+

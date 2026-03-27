@@ -1,0 +1,78 @@
+id: "activity.if_else.basic"
+diagram_type: "activity"
+topic: "if_else"
+construct: "branch.if_else"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity branching: if / else / endif"
+intent:
+  - "if ... then ... else ..."
+  - "conditional branching"
+  - "if else branch"
+syntax: |
+  @startuml
+  start
+  :Prepare;
+  if (Condition?) then (yes)
+    :Branch A;
+  else (no)
+    :Branch B;
+  endif
+  :Finalize;
+  stop
+  @enduml
+parameters:
+  - name: "condition_text"
+    type: "string"
+    required: true
+    default: null
+    constraints:
+      - "Put it inside if ( ... )"
+    examples:
+      - "In stock?"
+      - "User logged in?"
+  - name: "then_label"
+    type: "string"
+    required: false
+    default: "yes"
+    constraints:
+      - "Put it inside then ( ... )"
+    examples:
+      - "Y"
+      - "ok"
+  - name: "else_label"
+    type: "string"
+    required: false
+    default: "no"
+    constraints:
+      - "Put it inside else ( ... )"
+    examples:
+      - "N"
+      - "fail"
+rules:
+  - "Every if block must be closed with endif"
+  - "Prefer :action; statements inside branches for consistent rendering"
+examples:
+  - |
+    @startuml
+    start
+    :Validate input;
+    if (Valid format?) then (yes)
+      :Persist;
+    else (no)
+      :Show error;
+    endif
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "if"
+  - "else"
+  - "endif"
+  - "branch"
+  - "conditional branch"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "Activity Diagram: if/then/else syntaxes"
+  page: 124

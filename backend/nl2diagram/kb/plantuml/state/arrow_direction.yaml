@@ -1,0 +1,40 @@
+id: "state.arrow_direction.basic"
+diagram_type: "state"
+topic: "arrow_direction"
+construct: "state.arrow_direction"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "State arrow directions: -left-> / -right-> / -up-> / -down->"
+intent:
+  - "force transition direction"
+  - "layout direction for arrows"
+syntax: |
+  @startuml
+  [*] --> State1
+  State1 -left-> State2
+  State1 -right-> State3
+  State1 -up-> State4
+  State1 -down-> State5
+  State2 --> [*]
+  @enduml
+rules:
+  - "Use -left->, -right->, -up->, -down-> to control arrow direction"
+examples:
+  - |
+    @startuml
+    [*] -right-> Idle
+    Idle -down-> Working : start
+    Working -left-> Idle : stop
+    @enduml
+keywords:
+  - "state"
+  - "arrow direction"
+  - "-left->"
+  - "-right->"
+  - "-up->"
+  - "-down->"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.13 Arrow direction"
+  page: 245

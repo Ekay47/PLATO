@@ -1,0 +1,71 @@
+id: "activity.repeat_loop.basic"
+diagram_type: "activity"
+topic: "repeat_loop"
+construct: "loop.repeat"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity loop: repeat / repeat while"
+intent:
+  - "repeat until a condition holds"
+  - "iterate over data"
+  - "repeat loop"
+syntax: |
+  @startuml
+  start
+  :read data;
+  repeat
+    :generate diagrams;
+  repeat while (more data?) is (yes) not (no)
+  stop
+  @enduml
+parameters:
+  - name: "condition_text"
+    type: "string"
+    required: true
+    default: null
+    constraints:
+      - "Put it inside repeat while ( ... )"
+    examples:
+      - "more data?"
+      - "More tasks?"
+  - name: "yes_label"
+    type: "string"
+    required: false
+    default: "yes"
+    constraints:
+      - "Put it inside is ( ... )"
+    examples:
+      - "yes"
+      - "Y"
+  - name: "no_label"
+    type: "string"
+    required: false
+    default: "no"
+    constraints:
+      - "Put it inside not ( ... )"
+    examples:
+      - "no"
+      - "N"
+rules:
+  - "Every repeat block must end with repeat while (...)"
+  - "Prefer including is/not labels on the repeat while line for readability"
+examples:
+  - |
+    @startuml
+    start
+    repeat
+      :Try calling the API;
+    repeat while (Retry needed?) is (yes) not (no)
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "repeat"
+  - "repeat while"
+  - "loop"
+  - "looping"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.6 Repeat loop"
+  page: 129

@@ -1,0 +1,38 @@
+id: "activity.action_arrow.basic"
+diagram_type: "activity"
+topic: "action_arrow"
+construct: "flow.action_and_arrow"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Activity actions: :...; (implicit flow)"
+intent:
+  - "define actions in activity diagrams"
+  - "multi-line action labels"
+syntax: |
+  @startuml
+  :Hello world;
+  :This is defined on
+  several **lines**;
+  @enduml
+rules:
+  - "Activity labels start with : and end with ;"
+  - "Actions are implicitly linked in their definition order"
+examples:
+  - |
+    @startuml
+    start
+    :Read request;
+    :Process;
+    :Write response;
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "action"
+  - ":"
+  - ";"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.1 Simple action"
+  page: 123

@@ -1,0 +1,32 @@
+id: "sequence.message_to_self.basic"
+diagram_type: "sequence"
+topic: "message_to_self"
+construct: "message.self"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence message to self"
+intent:
+  - "a participant calls itself"
+  - "self message"
+syntax: |
+  @startuml
+  Alice -> Alice : self call
+  @enduml
+rules:
+  - "Use A -> A to draw a message to self"
+examples:
+  - |
+    @startuml
+    participant Service as S
+    S -> S : retry()
+    @enduml
+keywords:
+  - "sequence"
+  - "self"
+  - "message"
+  - "->"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.5 Message to Self"
+  page: 6

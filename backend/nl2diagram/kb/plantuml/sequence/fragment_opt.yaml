@@ -1,0 +1,44 @@
+id: "sequence.fragment_opt.basic"
+diagram_type: "sequence"
+topic: "opt"
+construct: "fragment.opt"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: opt / end (optional block)"
+intent:
+  - "optional step"
+  - "execute only when a condition holds"
+  - "optional block"
+syntax: |
+  @startuml
+  participant A
+  participant B
+
+  A -> B: request()
+  opt condition holds
+    B --> A: extra()
+  end
+  @enduml
+rules:
+  - "Every opt block must be closed with end"
+  - "Use opt for optional interactions; do not misuse it as a replacement for alt"
+examples:
+  - |
+    @startuml
+    participant FE
+    participant BE
+    FE -> BE: submit()
+    opt audit logging enabled
+      BE --> FE: logId
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "opt"
+  - "end"
+  - "optional"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.12 Grouping message (alt/else/opt/loop)"
+  page: 13

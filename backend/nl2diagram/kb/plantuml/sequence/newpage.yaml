@@ -1,0 +1,42 @@
+id: "sequence.newpage.basic"
+diagram_type: "sequence"
+topic: "newpage"
+construct: "layout.newpage"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence splitting diagrams: newpage"
+intent:
+  - "split a long sequence diagram into multiple pages"
+  - "newpage keyword"
+syntax: |
+  @startuml
+  Alice -> Bob : message 1
+  Alice -> Bob : message 2
+  newpage
+  Alice -> Bob : message 3
+  Alice -> Bob : message 4
+  newpage A title for the\nlast page
+  Alice -> Bob : message 5
+  Alice -> Bob : message 6
+  @enduml
+rules:
+  - "Use newpage to split a diagram into multiple images/pages"
+  - "An optional title can follow newpage and can include \\n"
+examples:
+  - |
+    @startuml
+    title First page
+    A -> B : one
+    newpage Second page
+    A -> B : two
+    @enduml
+keywords:
+  - "sequence"
+  - "newpage"
+  - "split"
+  - "\\n"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.11 Splitting diagrams"
+  page: 12

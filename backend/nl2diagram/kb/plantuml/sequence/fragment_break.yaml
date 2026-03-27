@@ -1,0 +1,37 @@
+id: "sequence.fragment_break.basic"
+diagram_type: "sequence"
+topic: "break"
+construct: "fragment.break"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: break / end"
+intent:
+  - "break out of a scenario"
+  - "abort the current interaction"
+syntax: |
+  @startuml
+  Alice -> Bob: request
+  break error
+    Bob --> Alice: 500
+  end
+  @enduml
+rules:
+  - "Every break block must be closed with end"
+  - "Use break to indicate an aborting/exceptional path"
+examples:
+  - |
+    @startuml
+    Client -> Service : request()
+    break timeout
+      Service --> Client : error
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "break"
+  - "end"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.12 Grouping message"
+  page: 12

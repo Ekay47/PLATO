@@ -1,0 +1,54 @@
+QUERY	Declaring participant on multiline	PAGES	5,592
+CONTEXT	Declaring participant on multiline	PAGE	5
+1.3 Declaring participant on multiline 1 SEQUENCE DIAGRAM
+@enduml
+1.3 Declaring participant on multiline
+You can declare participant on multi-line.
+@startuml
+participant Participant [
+=Title
+----
+""SubTitle""
+]
+participant Bob
+Participant -> Bob
+@enduml
+[Ref. QA-15232]
+1.4 Use non-letters in participants
+You can use quotes to define participants. And you can use the as keyword to give an alias to those
+participants.
+@startuml
+Alice -> "Bob()" : Hello
+"Bob()" -> "This is very\nlong" as Long
+' You can also declare:
+' "Bob()" -> Long as "This is very\nlong"
+Long --> "Bob()" : ok
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 4 / 606
+----
+1.3 Declaring participant on multiline 1 SEQUENCE DIAGRAM
+@enduml
+1.3 Declaring participant on multiline
+You can declare participant on multi-line.
+@startuml
+participant Participant [
+=Title
+----
+""SubTitle""
+]
+participant Bob
+Participant -> Bob
+@enduml
+[Ref. QA-15232]
+1.4 Use non-letters in participants
+You can use quotes to define participants. And you can use the as keyword to give an alias to those
+participants.
+@startuml
+Alice -> "Bob()" : Hello
+"Bob()" -> "This is very\nlong" as Long
+' You can also declare:
+' "Bob()" -> Long as "This is very\nlong"
+Long --> "Bob()" : ok
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 4 / 606
+----

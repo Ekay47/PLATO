@@ -1,0 +1,61 @@
+id: "sequence.alt_opt_loop.basic"
+diagram_type: "sequence"
+topic: "alt_opt_loop"
+construct: "fragment.alt_opt_loop"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: alt / opt / loop"
+intent:
+  - "conditional branching (success/failure)"
+  - "optional steps"
+  - "retry with loop"
+  - "alt opt loop fragment"
+syntax: |
+  @startuml
+  participant Client as C
+  participant Service as S
+
+  C -> S: request()
+
+  alt success
+    S --> C: 200 OK
+  else failure
+    S --> C: 4xx/5xx
+  end
+
+  opt audit logging enabled
+    C -> S: reportLog()
+  end
+
+  loop retry up to 3 times
+    C -> S: retry()
+  end
+  @enduml
+rules:
+  - "Every alt/opt/loop block must be closed with end"
+  - "Separate fragments with blank lines for readability"
+examples:
+  - |
+    @startuml
+    participant A
+    participant B
+    A -> B: do()
+    alt ok
+      B --> A: ok
+    else fail
+      B --> A: fail
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "alt"
+  - "opt"
+  - "loop"
+  - "end"
+  - "conditional branch"
+  - "retry"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.12 Grouping message (alt/else/opt/loop)"
+  page: 13

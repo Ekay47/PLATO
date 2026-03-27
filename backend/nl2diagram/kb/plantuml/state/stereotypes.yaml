@@ -1,0 +1,54 @@
+id: "state.stereotypes.basic"
+diagram_type: "state"
+topic: "stereotypes"
+construct: "state.stereotypes"
+complexity: "intermediate"
+requires_closure: false
+version: "1.2025.0"
+title: "State stereotypes: <<start>> / <<end>> / <<choice>> / <<fork>> / <<join>> / <<history>>"
+intent:
+  - "use stereotypes to declare pseudo-states"
+  - "full example with common state pseudo-states"
+syntax: |
+  @startuml
+  state start1 <<start>>
+  state choice1 <<choice>>
+  state fork1 <<fork>>
+  state join1 <<join>>
+  state end1 <<end>>
+
+  [*] --> choice1
+  start1 --> choice1
+  choice1 --> fork1
+  fork1 --> State1
+  fork1 --> State2
+  State1 --> [*]
+  State2 --> join1
+  join1 --> end1
+  end1 --> [*]
+  @enduml
+rules:
+  - "Pseudo-states can be declared via stereotypes like <<start>>, <<end>>, <<choice>>, <<fork>>, <<join>>"
+  - "Use transitions to connect pseudo-states and normal states"
+examples:
+  - |
+    @startuml
+    state start1 <<start>>
+    state end1 <<end>>
+    start1 --> Working
+    Working --> end1
+    end1 --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "stereotype"
+  - "<<start>>"
+  - "<<end>>"
+  - "<<choice>>"
+  - "<<fork>>"
+  - "<<join>>"
+  - "<<history>>"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.9 Stereotypes full example [start, choice, fork, join, end, history, history*]"
+  page: 241

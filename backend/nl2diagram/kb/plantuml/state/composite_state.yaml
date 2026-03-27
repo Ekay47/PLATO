@@ -1,0 +1,47 @@
+id: "state.composite_state.basic"
+diagram_type: "state"
+topic: "composite_state"
+construct: "state.composite"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "State composite states: state X { ... }"
+intent:
+  - "nested states"
+  - "composite state machine"
+  - "composite state"
+syntax: |
+  @startuml
+  [*] --> Order
+
+  state Order {
+    [*] --> Created
+    Created --> Paid : pay
+    Paid --> Shipped : ship
+  }
+
+  Order --> [*] : close
+  @enduml
+rules:
+  - "Wrap composite states with state Name { ... }"
+  - "You can use [*] inside the composite state to define an initial sub-state"
+examples:
+  - |
+    @startuml
+    [*] --> Session
+    state Session {
+      [*] --> Active
+      Active --> Expired : timeout
+    }
+    Session --> [*] : end
+    @enduml
+keywords:
+  - "state"
+  - "composite"
+  - "nested"
+  - "state {"
+  - "composite state"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.3 Composite state"
+  page: 233

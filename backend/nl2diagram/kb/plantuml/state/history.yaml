@@ -1,0 +1,55 @@
+id: "state.history.basic"
+diagram_type: "state"
+topic: "history"
+construct: "history.state"
+complexity: "intermediate"
+requires_closure: true
+version: "1.2025.0"
+title: "State history: [H] / [H*] (history / deep history)"
+intent:
+  - "resume the last active substate"
+  - "deep history resume"
+  - "history state"
+syntax: |
+  @startuml
+  [*] --> Outside
+
+  state Composite {
+    [*] --> A
+    A --> B : next
+    B --> A : back
+    Outside --> [H] : Resume
+  }
+
+  Outside --> Composite[H*] : DeepResume
+  Composite --> Outside : Exit
+  @enduml
+rules:
+  - "Use [H] for history and [H*] for deep history"
+  - "Inside a composite state (state X { ... }), [H] can be used as a history pseudo-state"
+  - "Use StateName[H] or StateName[H*] to transition to the composite state's history"
+examples:
+  - |
+    @startuml
+    [*] --> Idle
+    Idle --> Work : start
+    state Work {
+      [*] --> Step1
+      Step1 --> Step2 : next
+      Step2 --> Step1 : prev
+      Idle --> [H] : resume
+    }
+    Idle --> Work[H*] : deep resume
+    Work --> Idle : stop
+    @enduml
+keywords:
+  - "state"
+  - "history"
+  - "deep history"
+  - "[H]"
+  - "[H*]"
+  - "history state"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.5 History [[H], [H*]]"
+  page: 236

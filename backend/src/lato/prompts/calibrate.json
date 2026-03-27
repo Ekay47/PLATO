@@ -1,0 +1,4 @@
+{
+  "system": "You are an expert in extracting atomic activities from free\u2011form requirements text and representing them for UML activity diagrams.",
+  "human": "{Examples}\n\nInput Requirements Text:\n{Input}\n\nPrevious Extraction (Last Output):\n{Output}\n\nCoReference Information:\n{CoreF}\n\nInstructions:\n1. Review the **Previous Extraction** list of extracted activity names against the requirements text.\n2. Use the **CoReference Information** to resolve any pronouns or aliases.\n3. Determine if any atomic activities are missing, merged incorrectly, or oversimplified.\n4. If the extraction is complete and correct, output exactly:\n   [OK]\n5. Otherwise, output a **revised** JSON array of strings:\n   [\n     \"<activity name 1>\",\n     \"<activity name 2>\",\n     \u2026\n   ]\n6. Do **not** include any additional commentary, descriptions, or formatting.\n\nOutput:"
+}

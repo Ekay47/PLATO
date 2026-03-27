@@ -1,0 +1,45 @@
+id: "sequence.fragment_loop.basic"
+diagram_type: "sequence"
+topic: "loop"
+construct: "fragment.loop"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: loop / end (repeated interaction)"
+intent:
+  - "retry N times"
+  - "repeat calls"
+  - "retry loop"
+syntax: |
+  @startuml
+  participant Alice as A
+  participant Bob as B
+
+  loop 3 times
+    A -> B: call()
+    B --> A: result
+  end
+  @enduml
+rules:
+  - "Every loop block must be closed with end"
+  - "Prefer including a count or condition in the loop label"
+examples:
+  - |
+    @startuml
+    participant Client as C
+    participant Service as S
+    loop retry up to 3 times
+      C -> S: request()
+      S --> C: response
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "loop"
+  - "end"
+  - "retry"
+  - "looping"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.12 Grouping message (alt/else/opt/loop)"
+  page: 13

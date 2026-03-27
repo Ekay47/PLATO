@@ -1,0 +1,38 @@
+id: "state.concurrent.separator_horizontal.basic"
+diagram_type: "state"
+topic: "concurrent_horizontal_separator"
+construct: "state.concurrent.separator_horizontal"
+complexity: "intermediate"
+requires_closure: true
+version: "1.2025.0"
+title: "Concurrent state horizontal separator: --"
+intent:
+  - "horizontal separator for concurrent regions"
+syntax: |
+  @startuml
+  state C {
+    [*] --> State1
+    --
+    [*] --> State2
+  }
+  @enduml
+rules:
+  - "Use -- inside a composite state to create horizontally separated concurrent regions"
+examples:
+  - |
+    @startuml
+    state Parallel {
+      [*] --> A
+      --
+      [*] --> B
+    }
+    @enduml
+keywords:
+  - "state"
+  - "concurrent"
+  - "horizontal"
+  - "--"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.7.1 Horizontal separator --"
+  page: 238

@@ -1,0 +1,42 @@
+id: "state.expansion.basic"
+diagram_type: "state"
+topic: "expansion"
+construct: "state.expansion"
+complexity: "intermediate"
+requires_closure: false
+version: "1.2025.0"
+title: "State expansion: <<expansionInput>> / <<expansionOutput>>"
+intent:
+  - "model expansion input/output"
+  - "expansionInput and expansionOutput pseudo-states"
+syntax: |
+  @startuml
+  state expi <<expansionInput>>
+  state expo <<expansionOutput>>
+  [*] --> expi
+  expi --> State1
+  State1 --> expo
+  expo --> [*]
+  @enduml
+rules:
+  - "Declare expansions using <<expansionInput>> and <<expansionOutput>> stereotypes"
+examples:
+  - |
+    @startuml
+    state In <<expansionInput>>
+    state Out <<expansionOutput>>
+    [*] --> In
+    In --> Work
+    Work --> Out
+    Out --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "expansionInput"
+  - "expansionOutput"
+  - "<<expansionInput>>"
+  - "<<expansionOutput>>"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.12 Expansion [expansionInput, expansionOutput]"
+  page: 244

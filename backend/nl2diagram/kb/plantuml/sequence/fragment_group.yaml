@@ -1,0 +1,38 @@
+id: "sequence.fragment_group.basic"
+diagram_type: "sequence"
+topic: "group"
+construct: "fragment.group"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: group / end"
+intent:
+  - "group a set of messages"
+  - "add a label to a group"
+syntax: |
+  @startuml
+  Alice -> Bob: Authentication Request
+  group My own label
+    Alice -> Bob: Step 1
+    Alice -> Bob: Step 2
+  end
+  @enduml
+rules:
+  - "Every group block must be closed with end"
+  - "Group blocks can be nested"
+examples:
+  - |
+    @startuml
+    Client -> Service : request()
+    group Retry loop
+      Client -> Service : retry()
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "group"
+  - "end"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.13 Secondary group label"
+  page: 13

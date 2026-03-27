@@ -1,0 +1,60 @@
+QUERY	Long name	PAGES	4,235,254,406,417,597
+CONTEXT	Long name	PAGE	235
+9.4 Long name 9 STATE DIAGRAM
+state A.X
+state A.Y
+state B.Z
+X --> Z
+Z --> Y
+@enduml
+9.4 Long name
+You can also use the state keyword to use long description for states.
+@startuml
+scale 600 width
+[*] -> State1
+State1 --> State2 : Succeeded
+State1 --> [*] : Aborted
+State2 --> State3 : Succeeded
+State2 --> [*] : Aborted
+state State3 {
+state "Accumulate Enough Data\nLong State Name" as long1
+long1 : Just a test
+[*] --> long1
+long1 --> long1 : New Data
+long1 --> ProcessData : Enough Data
+}
+State3 --> State3 : Failed
+State3 --> [*] : Succeeded / Save Result
+State3 --> [*] : Aborted
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 234 / 606
+----
+9.4 Long name 9 STATE DIAGRAM
+state A.X
+state A.Y
+state B.Z
+X --> Z
+Z --> Y
+@enduml
+9.4 Long name
+You can also use the state keyword to use long description for states.
+@startuml
+scale 600 width
+[*] -> State1
+State1 --> State2 : Succeeded
+State1 --> [*] : Aborted
+State2 --> State3 : Succeeded
+State2 --> [*] : Aborted
+state State3 {
+state "Accumulate Enough Data\nLong State Name" as long1
+long1 : Just a test
+[*] --> long1
+long1 --> long1 : New Data
+long1 --> ProcessData : Enough Data
+}
+State3 --> State3 : Failed
+State3 --> [*] : Succeeded / Save Result
+State3 --> [*] : Aborted
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 234 / 606
+----

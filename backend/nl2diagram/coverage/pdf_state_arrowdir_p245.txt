@@ -1,0 +1,42 @@
+QUERY	Arrow direction	PAGES	6,56,83,113,170,245,531,594,597
+CONTEXT	Arrow direction	PAGE	245
+9.13 Arrow direction 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.13 Arrow direction
+You can use -> for horizontal arrows. It is possible to force arrow’s direction using the following syntax:
+• -down-> or -->
+• -right-> or -> (default arrow)
+• -left->
+• -up->
+@startuml
+[*] -up-> First
+First -right-> Second
+Second --> Third
+Third -left-> Last
+@enduml
+You can shorten the arrow definition by using only the first character of the direction (for example, -d-
+instead of -down-) or the two first characters ( -do-).
+Please note that you should not abuse this functionality : Graphviz gives usually good results without
+tweaking.
+PlantUML Language Reference Guide (1.2025.0) 244 / 606
+----
+9.13 Arrow direction 9 STATE DIAGRAM
+[Ref. QA-4309]
+9.13 Arrow direction
+You can use -> for horizontal arrows. It is possible to force arrow’s direction using the following syntax:
+• -down-> or -->
+• -right-> or -> (default arrow)
+• -left->
+• -up->
+@startuml
+[*] -up-> First
+First -right-> Second
+Second --> Third
+Third -left-> Last
+@enduml
+You can shorten the arrow definition by using only the first character of the direction (for example, -d-
+instead of -down-) or the two first characters ( -do-).
+Please note that you should not abuse this functionality : Graphviz gives usually good results without
+tweaking.
+PlantUML Language Reference Guide (1.2025.0) 244 / 606
+----

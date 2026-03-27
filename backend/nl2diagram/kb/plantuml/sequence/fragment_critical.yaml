@@ -1,0 +1,39 @@
+id: "sequence.fragment_critical.basic"
+diagram_type: "sequence"
+topic: "critical"
+construct: "fragment.critical"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: critical / end"
+intent:
+  - "mark a critical section"
+  - "mutual exclusion region"
+syntax: |
+  @startuml
+  Alice -> Bob: before
+  critical
+    Alice -> Bob: exclusive step
+  end
+  Alice -> Bob: after
+  @enduml
+rules:
+  - "Every critical block must be closed with end"
+  - "Use critical to highlight an exclusive/atomic region"
+examples:
+  - |
+    @startuml
+    Client -> Lock : acquire()
+    critical
+      Client -> Service : update()
+    end
+    Client -> Lock : release()
+    @enduml
+keywords:
+  - "sequence"
+  - "critical"
+  - "end"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.12 Grouping message"
+  page: 12

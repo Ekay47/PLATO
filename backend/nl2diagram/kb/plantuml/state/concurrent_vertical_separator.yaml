@@ -1,0 +1,38 @@
+id: "state.concurrent.separator_vertical.basic"
+diagram_type: "state"
+topic: "concurrent_vertical_separator"
+construct: "state.concurrent.separator_vertical"
+complexity: "intermediate"
+requires_closure: true
+version: "1.2025.0"
+title: "Concurrent state vertical separator: ||"
+intent:
+  - "vertical separator for concurrent regions"
+syntax: |
+  @startuml
+  state C {
+    [*] --> State1
+    ||
+    [*] --> State2
+  }
+  @enduml
+rules:
+  - "Use || inside a composite state to create vertically separated concurrent regions"
+examples:
+  - |
+    @startuml
+    state Parallel {
+      [*] --> A
+      ||
+      [*] --> B
+    }
+    @enduml
+keywords:
+  - "state"
+  - "concurrent"
+  - "vertical"
+  - "||"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.7.2 Vertical separator ||"
+  page: 239

@@ -1,0 +1,44 @@
+id: "sequence.fragment_ref.basic"
+diagram_type: "sequence"
+topic: "ref"
+construct: "fragment.ref"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence reference fragments: ref over ... / end ref"
+intent:
+  - "reference another interaction"
+  - "collapse details"
+  - "reference fragment"
+syntax: |
+  @startuml
+  participant Alice
+  actor Bob
+  ref over Alice, Bob : init
+  Alice -> Bob : hello
+  ref over Bob
+  This can be on
+  several lines
+  end ref
+  @enduml
+rules:
+  - "Single-line ref can use ref over A, B : label"
+  - "Multi-line ref starts with ref over ... and ends with end ref"
+examples:
+  - |
+    @startuml
+    participant C
+    participant S
+    ref over C, S : Auth
+    C -> S : request()
+    @enduml
+keywords:
+  - "sequence"
+  - "ref"
+  - "ref over"
+  - "end ref"
+  - "reference"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.21 Reference"
+  page: 19

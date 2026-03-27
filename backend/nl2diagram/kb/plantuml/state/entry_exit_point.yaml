@@ -1,0 +1,56 @@
+id: "state.entry_exit_point.basic"
+diagram_type: "state"
+topic: "entry_exit_point"
+construct: "state.entry_exit_point"
+complexity: "intermediate"
+requires_closure: true
+version: "1.2025.0"
+title: "State entry/exit points: <<entryPoint>> / <<exitPoint>>"
+intent:
+  - "explicit entry/exit points for composite states"
+  - "connect transitions into/out of a composite state"
+syntax: |
+  @startuml
+  state entry1 <<entryPoint>>
+  state exit1 <<exitPoint>>
+  state State1 {
+    state entry2 <<entryPoint>>
+    state exit2 <<exitPoint>>
+    [*] --> entry2
+    entry2 --> State2
+    State2 --> exit2
+    exit2 --> [*]
+  }
+  entry1 --> State1 : enter
+  exit1 --> State1 : exit
+  State1 --> exit1
+  @enduml
+rules:
+  - "Declare entry and exit points using <<entryPoint>> and <<exitPoint>> stereotypes"
+  - "Entry/exit points can be defined inside a composite state and also outside"
+examples:
+  - |
+    @startuml
+    state In <<entryPoint>>
+    state Out <<exitPoint>>
+    state Flow {
+      state Entry <<entryPoint>>
+      state Exit <<exitPoint>>
+      [*] --> Entry
+      Entry --> Running
+      Running --> Exit
+      Exit --> [*]
+    }
+    In --> Flow
+    Flow --> Out
+    @enduml
+keywords:
+  - "state"
+  - "entryPoint"
+  - "exitPoint"
+  - "<<entryPoint>>"
+  - "<<exitPoint>>"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.10 Point [entryPoint, exitPoint]"
+  page: 242

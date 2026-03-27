@@ -1,0 +1,45 @@
+id: "sequence.activation.basic"
+diagram_type: "sequence"
+topic: "activation"
+construct: "lifeline.activation"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence activation bars: activate / deactivate"
+intent:
+  - "show execution (activation bar)"
+  - "highlight call duration"
+  - "activation bar"
+syntax: |
+  @startuml
+  participant Client as C
+  participant Server as S
+
+  C -> S: call()
+  activate S
+  S --> C: result
+  deactivate S
+  @enduml
+rules:
+  - "Prefer pairing activate/deactivate to avoid unclosed activations"
+  - "Use activations when you need to emphasize call chains; omit for simple flows"
+examples:
+  - |
+    @startuml
+    participant A
+    participant B
+    A -> B: work()
+    activate B
+    B --> A: done
+    deactivate B
+    @enduml
+keywords:
+  - "sequence"
+  - "activate"
+  - "deactivate"
+  - "activation"
+  - "activation bar"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.25 Lifeline Activation and Destruction"
+  page: 21

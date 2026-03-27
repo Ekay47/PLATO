@@ -1,0 +1,2037 @@
+﻿{
+  "pdf": "F:\\Project\\2026Projects\\PLATO\\backend\\nl2diagram\\PlantUML_Language_Reference_Guide_en.pdf",
+  "chapters": [
+    "1",
+    "6",
+    "9"
+  ],
+  "count": 405,
+  "headings": [
+    {
+      "page": 2,
+      "chapter": "1",
+      "text": "1.1 Basic Examples"
+    },
+    {
+      "page": 3,
+      "chapter": "1",
+      "text": "1.2 Declaring participant 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 3,
+      "chapter": "1",
+      "text": "1.2 Declaring participant"
+    },
+    {
+      "page": 4,
+      "chapter": "1",
+      "text": "1.2 Declaring participant 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 5,
+      "chapter": "1",
+      "text": "1.3 Declaring participant on multiline 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 5,
+      "chapter": "1",
+      "text": "1.3 Declaring participant on multiline"
+    },
+    {
+      "page": 5,
+      "chapter": "1",
+      "text": "1.4 Use non-letters in participants"
+    },
+    {
+      "page": 6,
+      "chapter": "1",
+      "text": "1.5 Message to Self 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 6,
+      "chapter": "1",
+      "text": "1.5 Message to Self"
+    },
+    {
+      "page": 6,
+      "chapter": "1",
+      "text": "1.6 Text alignment"
+    },
+    {
+      "page": 6,
+      "chapter": "1",
+      "text": "1.6.1 T ext of response message below the arrow"
+    },
+    {
+      "page": 7,
+      "chapter": "1",
+      "text": "1.7 Change arrow style 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 7,
+      "chapter": "1",
+      "text": "1.7 Change arrow style"
+    },
+    {
+      "page": 7,
+      "chapter": "1",
+      "text": "1.8 Change arrow color"
+    },
+    {
+      "page": 8,
+      "chapter": "1",
+      "text": "1.9 Message sequence numbering 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 8,
+      "chapter": "1",
+      "text": "1.9 Message sequence numbering"
+    },
+    {
+      "page": 9,
+      "chapter": "1",
+      "text": "1.9 Message sequence numbering 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 10,
+      "chapter": "1",
+      "text": "1.9 Message sequence numbering 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 11,
+      "chapter": "1",
+      "text": "1.10 Page Title, Header and Footer 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 11,
+      "chapter": "1",
+      "text": "1.10 Page Title, Header and Footer"
+    },
+    {
+      "page": 12,
+      "chapter": "1",
+      "text": "1.11 Splitting diagrams 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 12,
+      "chapter": "1",
+      "text": "1.11 Splitting diagrams"
+    },
+    {
+      "page": 12,
+      "chapter": "1",
+      "text": "1.12 Grouping message"
+    },
+    {
+      "page": 13,
+      "chapter": "1",
+      "text": "1.13 Secondary group label 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 13,
+      "chapter": "1",
+      "text": "1.13 Secondary group label"
+    },
+    {
+      "page": 14,
+      "chapter": "1",
+      "text": "1.14 Notes on messages 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 14,
+      "chapter": "1",
+      "text": "1.14 Notes on messages"
+    },
+    {
+      "page": 15,
+      "chapter": "1",
+      "text": "1.15 Some other notes 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 15,
+      "chapter": "1",
+      "text": "1.15 Some other notes"
+    },
+    {
+      "page": 16,
+      "chapter": "1",
+      "text": "1.16 Changing notes shape [hnote, rnote] 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 16,
+      "chapter": "1",
+      "text": "1.16 Changing notes shape [hnote, rnote]"
+    },
+    {
+      "page": 16,
+      "chapter": "1",
+      "text": "1.17 Note over all participants [across]"
+    },
+    {
+      "page": 17,
+      "chapter": "1",
+      "text": "1.18 Several notes aligned at the same level [/] 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 17,
+      "chapter": "1",
+      "text": "1.18 Several notes aligned at the same level [/]"
+    },
+    {
+      "page": 18,
+      "chapter": "1",
+      "text": "1.19 Creole and HTML 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 18,
+      "chapter": "1",
+      "text": "1.19 Creole and HTML"
+    },
+    {
+      "page": 19,
+      "chapter": "1",
+      "text": "1.20 Divider or separator 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 19,
+      "chapter": "1",
+      "text": "1.20 Divider or separator"
+    },
+    {
+      "page": 19,
+      "chapter": "1",
+      "text": "1.21 Reference"
+    },
+    {
+      "page": 20,
+      "chapter": "1",
+      "text": "1.22 Delay 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 20,
+      "chapter": "1",
+      "text": "1.22 Delay"
+    },
+    {
+      "page": 20,
+      "chapter": "1",
+      "text": "1.23 Text wrapping"
+    },
+    {
+      "page": 21,
+      "chapter": "1",
+      "text": "1.24 Space 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 21,
+      "chapter": "1",
+      "text": "1.24 Space"
+    },
+    {
+      "page": 21,
+      "chapter": "1",
+      "text": "1.25 Lifeline Activation and Destruction"
+    },
+    {
+      "page": 22,
+      "chapter": "1",
+      "text": "1.25 Lifeline Activation and Destruction 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 23,
+      "chapter": "1",
+      "text": "1.26 Return 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 23,
+      "chapter": "1",
+      "text": "1.26 Return"
+    },
+    {
+      "page": 24,
+      "chapter": "1",
+      "text": "1.27 Participant creation 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 24,
+      "chapter": "1",
+      "text": "1.27 Participant creation"
+    },
+    {
+      "page": 24,
+      "chapter": "1",
+      "text": "1.28 Shortcut syntax for activation, deactivation, creation"
+    },
+    {
+      "page": 25,
+      "chapter": "1",
+      "text": "1.28 Shortcut syntax for activation, deactivation, creation 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 26,
+      "chapter": "1",
+      "text": "1.29 Incoming and outgoing messages 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 26,
+      "chapter": "1",
+      "text": "1.29 Incoming and outgoing messages"
+    },
+    {
+      "page": 27,
+      "chapter": "1",
+      "text": "1.30 Short arrows for incoming and outgoing messages 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 27,
+      "chapter": "1",
+      "text": "1.30 Short arrows for incoming and outgoing messages"
+    },
+    {
+      "page": 28,
+      "chapter": "1",
+      "text": "1.31 Anchors and Duration 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 28,
+      "chapter": "1",
+      "text": "1.31 Anchors and Duration"
+    },
+    {
+      "page": 28,
+      "chapter": "1",
+      "text": "1.32 Stereotypes and Spots"
+    },
+    {
+      "page": 29,
+      "chapter": "1",
+      "text": "1.33 Position of the stereotypes 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 29,
+      "chapter": "1",
+      "text": "1.33 Position of the stereotypes"
+    },
+    {
+      "page": 30,
+      "chapter": "1",
+      "text": "1.34 More information on titles 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 30,
+      "chapter": "1",
+      "text": "1.33.1 T op postion (by default)"
+    },
+    {
+      "page": 30,
+      "chapter": "1",
+      "text": "1.33.2 Bottom postion"
+    },
+    {
+      "page": 30,
+      "chapter": "1",
+      "text": "1.34 More information on titles"
+    },
+    {
+      "page": 31,
+      "chapter": "1",
+      "text": "1.34 More information on titles 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 32,
+      "chapter": "1",
+      "text": "1.35 Participants encompass 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 32,
+      "chapter": "1",
+      "text": "1.35 Participants encompass"
+    },
+    {
+      "page": 33,
+      "chapter": "1",
+      "text": "1.36 Removing Foot Boxes 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 33,
+      "chapter": "1",
+      "text": "1.36 Removing Foot Boxes"
+    },
+    {
+      "page": 33,
+      "chapter": "1",
+      "text": "1.37 Skinparam"
+    },
+    {
+      "page": 34,
+      "chapter": "1",
+      "text": "1.37 Skinparam 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 35,
+      "chapter": "1",
+      "text": "1.38 Changing padding 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 35,
+      "chapter": "1",
+      "text": "1.38 Changing padding"
+    },
+    {
+      "page": 36,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 36,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type"
+    },
+    {
+      "page": 36,
+      "chapter": "1",
+      "text": "1.39.1 Normal arrow"
+    },
+    {
+      "page": 37,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 37,
+      "chapter": "1",
+      "text": "1.39.2 Itself arrow"
+    },
+    {
+      "page": 38,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 38,
+      "chapter": "1",
+      "text": "1.39.3 Incoming and outgoing messages (with 鈥橻鈥? 鈥橾鈥?"
+    },
+    {
+      "page": 38,
+      "chapter": "1",
+      "text": "1.39.4 Incoming messages (with 鈥橻鈥?"
+    },
+    {
+      "page": 39,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 40,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 40,
+      "chapter": "1",
+      "text": "1.39.5 Outgoing messages (with 鈥橾鈥?"
+    },
+    {
+      "page": 41,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 41,
+      "chapter": "1",
+      "text": "1.39.6 Short incoming and outgoing messages (with 鈥?鈥?"
+    },
+    {
+      "page": 41,
+      "chapter": "1",
+      "text": "1.39.7 Short incoming (with 鈥?鈥?"
+    },
+    {
+      "page": 42,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 42,
+      "chapter": "1",
+      "text": "1.39.8 Short outgoing (with 鈥?鈥?"
+    },
+    {
+      "page": 43,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 44,
+      "chapter": "1",
+      "text": "1.40 Specific SkinParameter 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 44,
+      "chapter": "1",
+      "text": "1.40 Specific SkinParameter"
+    },
+    {
+      "page": 44,
+      "chapter": "1",
+      "text": "1.40.1 By default"
+    },
+    {
+      "page": 44,
+      "chapter": "1",
+      "text": "1.40.2 LifelineStrategy"
+    },
+    {
+      "page": 44,
+      "chapter": "1",
+      "text": "1.40.3 style strictuml"
+    },
+    {
+      "page": 45,
+      "chapter": "1",
+      "text": "1.41 Hide unlinked participant 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 45,
+      "chapter": "1",
+      "text": "1.41 Hide unlinked participant"
+    },
+    {
+      "page": 45,
+      "chapter": "1",
+      "text": "1.42 Color a group message"
+    },
+    {
+      "page": 46,
+      "chapter": "1",
+      "text": "1.43 Mainframe 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 46,
+      "chapter": "1",
+      "text": "1.43 Mainframe"
+    },
+    {
+      "page": 46,
+      "chapter": "1",
+      "text": "1.44 Slanted or odd arrows"
+    },
+    {
+      "page": 47,
+      "chapter": "1",
+      "text": "1.44 Slanted or odd arrows 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 48,
+      "chapter": "1",
+      "text": "1.45 Parallel messages (with teoz) 1 SEQUENCE DIAGRAM"
+    },
+    {
+      "page": 48,
+      "chapter": "1",
+      "text": "1.45 Parallel messages (with teoz)"
+    },
+    {
+      "page": 123,
+      "chapter": "6",
+      "text": "6.0.1 Benefits of the New Syntax"
+    },
+    {
+      "page": 123,
+      "chapter": "6",
+      "text": "6.0.2 T ransition to the New Syntax"
+    },
+    {
+      "page": 123,
+      "chapter": "6",
+      "text": "6.1 Simple action"
+    },
+    {
+      "page": 123,
+      "chapter": "6",
+      "text": "6.2 Start/Stop/End"
+    },
+    {
+      "page": 124,
+      "chapter": "6",
+      "text": "6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 124,
+      "chapter": "6",
+      "text": "6.3 Conditional"
+    },
+    {
+      "page": 125,
+      "chapter": "6",
+      "text": "6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 125,
+      "chapter": "6",
+      "text": "6.3.1 Several tests (horizontal mode)"
+    },
+    {
+      "page": 126,
+      "chapter": "6",
+      "text": "6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 126,
+      "chapter": "6",
+      "text": "6.3.2 Several tests (vertical mode)"
+    },
+    {
+      "page": 127,
+      "chapter": "6",
+      "text": "6.4 Switch and case [switch, case, endswitch] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 127,
+      "chapter": "6",
+      "text": "6.4 Switch and case [switch, case, endswitch]"
+    },
+    {
+      "page": 128,
+      "chapter": "6",
+      "text": "6.5 Conditional with stop on an action [kill, detach] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 128,
+      "chapter": "6",
+      "text": "6.5 Conditional with stop on an action [kill, detach]"
+    },
+    {
+      "page": 129,
+      "chapter": "6",
+      "text": "6.6 Repeat loop 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 129,
+      "chapter": "6",
+      "text": "6.6 Repeat loop"
+    },
+    {
+      "page": 129,
+      "chapter": "6",
+      "text": "6.6.1 Simple repeat loop"
+    },
+    {
+      "page": 129,
+      "chapter": "6",
+      "text": "6.6.2 Repeat loop with repeat action and backward action"
+    },
+    {
+      "page": 130,
+      "chapter": "6",
+      "text": "6.7 Break on a repeat loop [break] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 130,
+      "chapter": "6",
+      "text": "6.7 Break on a repeat loop [break]"
+    },
+    {
+      "page": 131,
+      "chapter": "6",
+      "text": "6.8 Goto and Label Processing [label, goto] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 131,
+      "chapter": "6",
+      "text": "6.8 Goto and Label Processing [label, goto]"
+    },
+    {
+      "page": 132,
+      "chapter": "6",
+      "text": "6.9 While loop 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 132,
+      "chapter": "6",
+      "text": "6.9 While loop"
+    },
+    {
+      "page": 132,
+      "chapter": "6",
+      "text": "6.9.1 Simple while loop"
+    },
+    {
+      "page": 133,
+      "chapter": "6",
+      "text": "6.9 While loop 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 133,
+      "chapter": "6",
+      "text": "6.9.2 While loop with backward action"
+    },
+    {
+      "page": 133,
+      "chapter": "6",
+      "text": "6.9.3 Infinite while loop"
+    },
+    {
+      "page": 134,
+      "chapter": "6",
+      "text": "6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 134,
+      "chapter": "6",
+      "text": "6.10 Parallel processing [fork, fork again, end fork, end merge]"
+    },
+    {
+      "page": 134,
+      "chapter": "6",
+      "text": "6.10.1 Simple fork"
+    },
+    {
+      "page": 134,
+      "chapter": "6",
+      "text": "6.10.2 fork with end merge"
+    },
+    {
+      "page": 135,
+      "chapter": "6",
+      "text": "6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 135,
+      "chapter": "6",
+      "text": "6.10.3 Label on end fork (or UML joinspec):"
+    },
+    {
+      "page": 136,
+      "chapter": "6",
+      "text": "6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 136,
+      "chapter": "6",
+      "text": "6.10.4 Other example"
+    },
+    {
+      "page": 137,
+      "chapter": "6",
+      "text": "6.11 Split processing 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 137,
+      "chapter": "6",
+      "text": "6.11 Split processing"
+    },
+    {
+      "page": 137,
+      "chapter": "6",
+      "text": "6.11.1 Split"
+    },
+    {
+      "page": 137,
+      "chapter": "6",
+      "text": "6.11.2 Input split (multi-start)"
+    },
+    {
+      "page": 138,
+      "chapter": "6",
+      "text": "6.11 Split processing 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 138,
+      "chapter": "6",
+      "text": "6.11.3 Output split (multi-end)"
+    },
+    {
+      "page": 139,
+      "chapter": "6",
+      "text": "6.12 Notes 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 139,
+      "chapter": "6",
+      "text": "6.12 Notes"
+    },
+    {
+      "page": 140,
+      "chapter": "6",
+      "text": "6.12 Notes 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 141,
+      "chapter": "6",
+      "text": "6.13 Colors 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 141,
+      "chapter": "6",
+      "text": "6.13 Colors"
+    },
+    {
+      "page": 142,
+      "chapter": "6",
+      "text": "6.14 Lines without arrows 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 142,
+      "chapter": "6",
+      "text": "6.14 Lines without arrows"
+    },
+    {
+      "page": 142,
+      "chapter": "6",
+      "text": "6.15 Arrows"
+    },
+    {
+      "page": 143,
+      "chapter": "6",
+      "text": "6.16 Connector 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 143,
+      "chapter": "6",
+      "text": "6.16 Connector"
+    },
+    {
+      "page": 143,
+      "chapter": "6",
+      "text": "6.17 Color on connector"
+    },
+    {
+      "page": 144,
+      "chapter": "6",
+      "text": "6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 144,
+      "chapter": "6",
+      "text": "6.18 Grouping or partition"
+    },
+    {
+      "page": 144,
+      "chapter": "6",
+      "text": "6.18.1 Group"
+    },
+    {
+      "page": 145,
+      "chapter": "6",
+      "text": "6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 145,
+      "chapter": "6",
+      "text": "6.18.2 Partition"
+    },
+    {
+      "page": 146,
+      "chapter": "6",
+      "text": "6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 147,
+      "chapter": "6",
+      "text": "6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 147,
+      "chapter": "6",
+      "text": "6.18.3 Group, Partition, Package, Rectangle or Card"
+    },
+    {
+      "page": 148,
+      "chapter": "6",
+      "text": "6.19 Swimlanes 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 148,
+      "chapter": "6",
+      "text": "6.19 Swimlanes"
+    },
+    {
+      "page": 149,
+      "chapter": "6",
+      "text": "6.19 Swimlanes 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 150,
+      "chapter": "6",
+      "text": "6.19 Swimlanes 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 151,
+      "chapter": "6",
+      "text": "6.20 Detach or kill [detach, kill] 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 151,
+      "chapter": "6",
+      "text": "6.20 Detach or kill [detach, kill]"
+    },
+    {
+      "page": 152,
+      "chapter": "6",
+      "text": "6.21 SDL (Specification and Description Language) 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 152,
+      "chapter": "6",
+      "text": "6.21 SDL (Specification and Description Language)"
+    },
+    {
+      "page": 152,
+      "chapter": "6",
+      "text": "6.21.1 T able of SDL Shape Name"
+    },
+    {
+      "page": 152,
+      "chapter": "6",
+      "text": "6.21.2 SDL using final separator (Deprecated form)"
+    },
+    {
+      "page": 153,
+      "chapter": "6",
+      "text": "6.21 SDL (Specification and Description Language) 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 154,
+      "chapter": "6",
+      "text": "6.21 SDL (Specification and Description Language) 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 154,
+      "chapter": "6",
+      "text": "6.21.3 SDL using Normal separator and Stereotype (Current o铿€iial form)"
+    },
+    {
+      "page": 155,
+      "chapter": "6",
+      "text": "6.22 Complete example 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 155,
+      "chapter": "6",
+      "text": "6.22 Complete example"
+    },
+    {
+      "page": 156,
+      "chapter": "6",
+      "text": "6.22 Complete example 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 157,
+      "chapter": "6",
+      "text": "6.23 Condition Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 157,
+      "chapter": "6",
+      "text": "6.23 Condition Style"
+    },
+    {
+      "page": 157,
+      "chapter": "6",
+      "text": "6.23.1 Inside style (by default)"
+    },
+    {
+      "page": 158,
+      "chapter": "6",
+      "text": "6.23 Condition Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 158,
+      "chapter": "6",
+      "text": "6.23.2 Diamond style"
+    },
+    {
+      "page": 159,
+      "chapter": "6",
+      "text": "6.23 Condition Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 159,
+      "chapter": "6",
+      "text": "6.23.3 InsideDiamond (or Foo1) style"
+    },
+    {
+      "page": 160,
+      "chapter": "6",
+      "text": "6.24 Condition End Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 160,
+      "chapter": "6",
+      "text": "6.24 Condition End Style"
+    },
+    {
+      "page": 160,
+      "chapter": "6",
+      "text": "6.24.1 Diamond style (by default)"
+    },
+    {
+      "page": 161,
+      "chapter": "6",
+      "text": "6.24 Condition End Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 161,
+      "chapter": "6",
+      "text": "6.24.2 Horizontal line (hline) style"
+    },
+    {
+      "page": 162,
+      "chapter": "6",
+      "text": "6.25 Using (global) style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 162,
+      "chapter": "6",
+      "text": "6.25 Using (global) style"
+    },
+    {
+      "page": 162,
+      "chapter": "6",
+      "text": "6.25.1 Without style (by default)"
+    },
+    {
+      "page": 162,
+      "chapter": "6",
+      "text": "6.25.2 With style"
+    },
+    {
+      "page": 163,
+      "chapter": "6",
+      "text": "6.25 Using (global) style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 164,
+      "chapter": "6",
+      "text": "6.25 Using (global) style 6 ACTIVITY DIAGRAM (NEW SYNTAX)"
+    },
+    {
+      "page": 232,
+      "chapter": "9",
+      "text": "9.1 Simple State"
+    },
+    {
+      "page": 232,
+      "chapter": "9",
+      "text": "9.2 Change state rendering"
+    },
+    {
+      "page": 233,
+      "chapter": "9",
+      "text": "9.3 Composite state 9 STATE DIAGRAM"
+    },
+    {
+      "page": 233,
+      "chapter": "9",
+      "text": "9.3 Composite state"
+    },
+    {
+      "page": 233,
+      "chapter": "9",
+      "text": "9.3.1 Internal sub-state"
+    },
+    {
+      "page": 234,
+      "chapter": "9",
+      "text": "9.3 Composite state 9 STATE DIAGRAM"
+    },
+    {
+      "page": 234,
+      "chapter": "9",
+      "text": "9.3.2 Sub-state to sub-state"
+    },
+    {
+      "page": 235,
+      "chapter": "9",
+      "text": "9.4 Long name 9 STATE DIAGRAM"
+    },
+    {
+      "page": 235,
+      "chapter": "9",
+      "text": "9.4 Long name"
+    },
+    {
+      "page": 236,
+      "chapter": "9",
+      "text": "9.5 History [[H], [H*]] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 236,
+      "chapter": "9",
+      "text": "9.5 History [[H], [H*]]"
+    },
+    {
+      "page": 237,
+      "chapter": "9",
+      "text": "9.6 Fork [fork, join] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 237,
+      "chapter": "9",
+      "text": "9.6 Fork [fork, join]"
+    },
+    {
+      "page": 238,
+      "chapter": "9",
+      "text": "9.7 Concurrent state [鈥? ||] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 238,
+      "chapter": "9",
+      "text": "9.7 Concurrent state [鈥? ||]"
+    },
+    {
+      "page": 238,
+      "chapter": "9",
+      "text": "9.7.1 Horizontal separator --"
+    },
+    {
+      "page": 239,
+      "chapter": "9",
+      "text": "9.7 Concurrent state [鈥? ||] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 239,
+      "chapter": "9",
+      "text": "9.7.2 V ertical separator ||"
+    },
+    {
+      "page": 240,
+      "chapter": "9",
+      "text": "9.8 Conditional [choice] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 240,
+      "chapter": "9",
+      "text": "9.8 Conditional [choice]"
+    },
+    {
+      "page": 240,
+      "chapter": "9",
+      "text": "9.9 Stereotypes full example [start, choice, fork, join, end, history, history*]"
+    },
+    {
+      "page": 240,
+      "chapter": "9",
+      "text": "9.9.1 Start, choice, fork, join, end"
+    },
+    {
+      "page": 241,
+      "chapter": "9",
+      "text": "9.9 Stereotypes full example [start, choice, fork, join, end, history, history*] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 242,
+      "chapter": "9",
+      "text": "9.10 Point [entryPoint, exitPoint] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 242,
+      "chapter": "9",
+      "text": "9.9.2 History , history*"
+    },
+    {
+      "page": 242,
+      "chapter": "9",
+      "text": "9.9.3 Minimal example with all stereotypes"
+    },
+    {
+      "page": 242,
+      "chapter": "9",
+      "text": "9.10 Point [entryPoint, exitPoint]"
+    },
+    {
+      "page": 243,
+      "chapter": "9",
+      "text": "9.11 Pin [inputPin, outputPin] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 243,
+      "chapter": "9",
+      "text": "9.11 Pin [inputPin, outputPin]"
+    },
+    {
+      "page": 244,
+      "chapter": "9",
+      "text": "9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM"
+    },
+    {
+      "page": 244,
+      "chapter": "9",
+      "text": "9.12 Expansion [expansionInput, expansionOutput]"
+    },
+    {
+      "page": 245,
+      "chapter": "9",
+      "text": "9.13 Arrow direction 9 STATE DIAGRAM"
+    },
+    {
+      "page": 245,
+      "chapter": "9",
+      "text": "9.13 Arrow direction"
+    },
+    {
+      "page": 246,
+      "chapter": "9",
+      "text": "9.14 Change line color and style 9 STATE DIAGRAM"
+    },
+    {
+      "page": 246,
+      "chapter": "9",
+      "text": "9.14 Change line color and style"
+    },
+    {
+      "page": 246,
+      "chapter": "9",
+      "text": "9.15 Note"
+    },
+    {
+      "page": 247,
+      "chapter": "9",
+      "text": "9.16 Note on link 9 STATE DIAGRAM"
+    },
+    {
+      "page": 247,
+      "chapter": "9",
+      "text": "9.16 Note on link"
+    },
+    {
+      "page": 247,
+      "chapter": "9",
+      "text": "9.17 More in notes"
+    },
+    {
+      "page": 248,
+      "chapter": "9",
+      "text": "9.18 Inline color 9 STATE DIAGRAM"
+    },
+    {
+      "page": 248,
+      "chapter": "9",
+      "text": "9.18 Inline color"
+    },
+    {
+      "page": 249,
+      "chapter": "9",
+      "text": "9.19 Skinparam 9 STATE DIAGRAM"
+    },
+    {
+      "page": 249,
+      "chapter": "9",
+      "text": "9.19 Skinparam"
+    },
+    {
+      "page": 250,
+      "chapter": "9",
+      "text": "9.20 Changing style 9 STATE DIAGRAM"
+    },
+    {
+      "page": 250,
+      "chapter": "9",
+      "text": "9.19.1 T est of all specific skinparam to State Diagrams"
+    },
+    {
+      "page": 250,
+      "chapter": "9",
+      "text": "9.20 Changing style"
+    },
+    {
+      "page": 251,
+      "chapter": "9",
+      "text": "9.20 Changing style 9 STATE DIAGRAM"
+    },
+    {
+      "page": 252,
+      "chapter": "9",
+      "text": "9.21 Change state color and style (inline style) 9 STATE DIAGRAM"
+    },
+    {
+      "page": 252,
+      "chapter": "9",
+      "text": "9.21 Change state color and style (inline style)"
+    },
+    {
+      "page": 253,
+      "chapter": "9",
+      "text": "9.22 Alias 9 STATE DIAGRAM"
+    },
+    {
+      "page": 253,
+      "chapter": "9",
+      "text": "9.22 Alias"
+    },
+    {
+      "page": 254,
+      "chapter": "9",
+      "text": "9.23 Display JSON Data on State diagram 9 STATE DIAGRAM"
+    },
+    {
+      "page": 254,
+      "chapter": "9",
+      "text": "9.23 Display JSON Data on State diagram"
+    },
+    {
+      "page": 254,
+      "chapter": "9",
+      "text": "9.23.1 Simple example"
+    },
+    {
+      "page": 255,
+      "chapter": "9",
+      "text": "9.24 State description 9 STATE DIAGRAM"
+    },
+    {
+      "page": 255,
+      "chapter": "9",
+      "text": "9.24 State description"
+    },
+    {
+      "page": 255,
+      "chapter": "9",
+      "text": "9.25 Style for Nested State Body"
+    },
+    {
+      "page": 256,
+      "chapter": "9",
+      "text": "9.25 Style for Nested State Body 9 STATE DIAGRAM"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.1 Basic Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.2 Declaring participant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.3 Declaring participant on multiline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.4 Use non-letters in participants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.5 Message to Self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.6 Text alignment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.6.1 Text of response message below the arrow . . . . . . . . . . . . . . . . . . . . . . . 5"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.7 Change arrow style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.8 Change arrow color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.9 Message sequence numbering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.10 Page Title, Header and Footer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.11 Splitting diagrams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.12 Grouping message . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.13 Secondary group label . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.14 Notes on messages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.15 Some other notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.16 Changing notes shape [hnote, rnote] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.17 Note over all participants [across] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.18 Several notes aligned at the same level [/] . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.19 Creole and HTML . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.20 Divider or separator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.21 Reference . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.22 Delay . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.23 Text wrapping . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.24 Space . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.25 Lifeline Activation and Destruction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.26 Return . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.27 Participant creation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.28 Shortcut syntax for activation, deactivation, creation . . . . . . . . . . . . . . . . . . . . . 23"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.29 Incoming and outgoing messages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.30 Short arrows for incoming and outgoing messages . . . . . . . . . . . . . . . . . . . . . . . 26"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.31 Anchors and Duration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.32 Stereotypes and Spots . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.33 Position of the stereotypes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.33.1 Top postion (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.33.2 Bottom postion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.34 More information on titles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.35 Participants encompass . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.36 Removing Foot Boxes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.37 Skinparam . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.38 Changing padding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39 Appendix: Examples of all arrow type . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.1 Normal arrow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.2 Itself arrow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.3 Incoming and outgoing messages (with 鈥橻鈥? 鈥橾鈥? . . . . . . . . . . . . . . . . . . . . . 37"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.4 Incoming messages (with 鈥橻鈥? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.5 Outgoing messages (with 鈥橾鈥? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.6 Short incoming and outgoing messages (with 鈥?鈥? . . . . . . . . . . . . . . . . . . . 40"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.7 Short incoming (with 鈥?鈥? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.39.8 Short outgoing (with 鈥?鈥? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.40 Specific SkinParameter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.40.1 By default . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.40.2 LifelineStrategy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.40.3 style strictuml . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43"
+    },
+    {
+      "page": 592,
+      "chapter": "1",
+      "text": "1.41 Hide unlinked participant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44"
+    },
+    {
+      "page": 593,
+      "chapter": "1",
+      "text": "1.42 Color a group message . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44"
+    },
+    {
+      "page": 593,
+      "chapter": "1",
+      "text": "1.43 Mainframe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45"
+    },
+    {
+      "page": 593,
+      "chapter": "1",
+      "text": "1.44 Slanted or odd arrows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45"
+    },
+    {
+      "page": 593,
+      "chapter": "1",
+      "text": "1.45 Parallel messages (with teoz) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.0.1 Benefits of the New Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.0.2 Transition to the New Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.1 Simple action . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.2 Start/Stop/End . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.3 Conditional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.3.1 Several tests (horizontal mode) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.3.2 Several tests (vertical mode) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.4 Switch and case [switch, case, endswitch] . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.5 Conditional with stop on an action [kill, detach] . . . . . . . . . . . . . . . . . . . . . . . . 127"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.6 Repeat loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.6.1 Simple repeat loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.6.2 Repeat loop with repeat action and backward action . . . . . . . . . . . . . . . . . 128"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.7 Break on a repeat loop [break] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.8 Goto and Label Processing [label, goto] . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.9 While loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.9.1 Simple while loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.9.2 While loop with backward action . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.9.3 Infinite while loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.10 Parallel processing [fork, fork again, end fork, end merge] . . . . . . . . . . . . . . . . . . 133"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.10.1 Simple fork . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.10.2 fork with end merge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.10.3 Label on end fork (or UML joinspec): . . . . . . . . . . . . . . . . . . . . . . . . . 134"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.10.4 Other example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 135"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.11 Split processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.11.1 Split . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.11.2 Input split (multi-start) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.11.3 Output split (multi-end) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.12 Notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.13 Colors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.14 Lines without arrows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.15 Arrows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.16 Connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.17 Color on connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.18 Grouping or partition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.18.1 Group . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.18.2 Partition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.18.3 Group, Partition, Package, Rectangle or Card . . . . . . . . . . . . . . . . . . . . . 146"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.19 Swimlanes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.20 Detach or kill [detach, kill] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 150"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.21 SDL (Specification and Description Language) . . . . . . . . . . . . . . . . . . . . . . . . 151"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.21.1 Table of SDL Shape Name . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.21.2 SDL using final separator (Deprecated form) . . . . . . . . . . . . . . . . . . . . . 151"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.21.3 SDL using Normal separator and Stereotype (Current o铿€iial form) . . . . . . . . . 153"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.22 Complete example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.23 Condition Style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.23.1 Inside style (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.23.2 Diamond style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.23.3 InsideDiamond (or Foo1) style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.24 Condition End Style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.24.1 Diamond style (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159"
+    },
+    {
+      "page": 595,
+      "chapter": "6",
+      "text": "6.24.2 Horizontal line (hline) style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160"
+    },
+    {
+      "page": 596,
+      "chapter": "6",
+      "text": "6.25 Using (global) style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161"
+    },
+    {
+      "page": 596,
+      "chapter": "6",
+      "text": "6.25.1 Without style (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161"
+    },
+    {
+      "page": 596,
+      "chapter": "6",
+      "text": "6.25.2 With style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.1 Simple State . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.2 Change state rendering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.3 Composite state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.3.1 Internal sub-state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.3.2 Sub-state to sub-state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.4 Long name . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 234"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.5 History [[H], [H*]] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.6 Fork [fork, join] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 236"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.7 Concurrent state [鈥? ||] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.7.1 Horizontal separator -- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.7.2 Vertical separator || . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 238"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.8 Conditional [choice] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 239"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.9 Stereotypes full example [start, choice, fork, join, end, history, history*] . . . . . . . . . . 239"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.9.1 Start, choice, fork, join, end . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 239"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.9.2 History, history* . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.9.3 Minimal example with all stereotypes . . . . . . . . . . . . . . . . . . . . . . . . . 241"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.10 Point [entryPoint, exitPoint] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.11 Pin [inputPin, outputPin] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 242"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.12 Expansion [expansionInput, expansionOutput] . . . . . . . . . . . . . . . . . . . . . . . . . 243"
+    },
+    {
+      "page": 597,
+      "chapter": "9",
+      "text": "9.13 Arrow direction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 244"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.14 Change line color and style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 245"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.15 Note . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 245"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.16 Note on link . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.17 More in notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.18 Inline color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 247"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.19 Skinparam . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 248"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.19.1 Test of all specific skinparam to State Diagrams . . . . . . . . . . . . . . . . . . . 249"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.20 Changing style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.21 Change state color and style (inline style) . . . . . . . . . . . . . . . . . . . . . . . . . . . 251"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.22 Alias . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 252"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.23 Display JSON Data on State diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.23.1 Simple example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.24 State description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254"
+    },
+    {
+      "page": 598,
+      "chapter": "9",
+      "text": "9.25 Style for Nested State Body . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254"
+    }
+  ]
+}
+

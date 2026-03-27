@@ -1,0 +1,39 @@
+id: "sequence.arrow_styles.basic"
+diagram_type: "sequence"
+topic: "arrow_styles"
+construct: "message.arrow_styles"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence arrow styles"
+intent:
+  - "different arrow styles for messages"
+syntax: |
+  @startuml
+  Bob -> Alice : solid
+  Bob --> Alice : dotted
+  Bob ->o Alice : message to actor
+  Bob <-o Alice : message from actor
+  Bob -\\ Alice : message to boundary
+  Bob \\- Alice : message from boundary
+  Bob ->> Alice : asynchronous
+  @enduml
+rules:
+  - "Use different arrow shapes to convey different semantics or styling"
+examples:
+  - |
+    @startuml
+    Client -> Service : request
+    Service --> Client : response
+    Client ->> Queue : publish(event)
+    @enduml
+keywords:
+  - "sequence"
+  - "arrow"
+  - "->"
+  - "-->"
+  - "->>"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.7 Change arrow style"
+  page: 7

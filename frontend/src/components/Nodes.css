@@ -1,0 +1,177 @@
+/* --- Base Node --- */
+.plantuml-node {
+  padding: var(--spacing-12) var(--spacing-16);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-surface);
+  border-radius: var(--radius-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  text-align: center;
+  min-width: 120px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plantuml-node:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.plantuml-node:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* --- Activity --- */
+.plantuml-node.activity {
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-surface);
+  border-color: var(--color-primary);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.plantuml-node.activity:hover {
+  background: var(--color-primary-light);
+}
+
+/* --- Condition (Diamond) --- */
+.uml-diamond-wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+
+.uml-diamond-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.uml-diamond-shape {
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-warning);
+  /* Use clip-path for diamond shape without rotation issues */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Shadow needs filter drop-shadow because of clip-path */
+  filter: drop-shadow(var(--shadow-sm));
+}
+
+.uml-diamond-wrapper:hover .uml-diamond-shape {
+  border-color: var(--color-warning);
+  background: #FFFBEB; /* Amber-50 */
+}
+
+.uml-diamond-content {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: 10px;
+  max-width: 70%; /* Keep text inside diamond */
+  line-height: 1.2;
+}
+
+/* Custom Handle Styling */
+.react-flow__handle.uml-handle {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-text-tertiary);
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.react-flow__handle.uml-handle:hover {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* --- Start/Stop --- */
+.plantuml-node.start {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-text-primary);
+  min-width: unset;
+  padding: 0;
+  border: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.plantuml-node.stop {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-bg-surface);
+  border: 6px solid var(--color-text-primary);
+  min-width: unset;
+  padding: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+/* --- Fork/Join --- */
+.plantuml-node.fork {
+  width: 120px;
+  height: 8px;
+  background: var(--color-text-primary);
+  border-radius: var(--radius-full);
+  min-width: unset;
+  padding: 0;
+  border: none;
+  box-shadow: var(--shadow-sm);
+}
+
+/* --- Merge (Small Diamond) --- */
+.plantuml-node.merge {
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+  background: var(--color-text-tertiary);
+  border-radius: 2px;
+  min-width: unset;
+  padding: 0;
+  border: none;
+}
+
+/* --- Note --- */
+.plantuml-node.note {
+  background: #FEF9C3; /* Yellow-100 */
+  border: 1px solid #FDE047; /* Yellow-300 */
+  color: #854D0E; /* Yellow-800 */
+  border-radius: 0;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.05);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  text-align: left;
+  position: relative;
+}
+
+/* Note Folded Corner Effect */
+.plantuml-node.note::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 10px 10px 0;
+  border-style: solid;
+  border-color: #FDE047 var(--color-bg-canvas); 
+  /* Visual trick: transparent isn't enough for the background color match */
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  display: block;
+  width: 0;
+}

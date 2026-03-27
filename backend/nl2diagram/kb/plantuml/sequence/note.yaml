@@ -1,0 +1,43 @@
+id: "sequence.note.basic"
+diagram_type: "sequence"
+topic: "note"
+construct: "annotation.note"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence notes: note left/right (single-line and multi-line)"
+intent:
+  - "annotate a message"
+  - "add explanation"
+  - "note on message"
+syntax: |
+  @startuml
+  Alice->Bob : hello
+  note left: this is a first note
+  Bob->Alice : ok
+  note right: this is another note
+  @enduml
+rules:
+  - "Use note left/note right to annotate nearby messages"
+  - "Multi-line notes start with note left (or note right) and end with end note"
+examples:
+  - |
+    @startuml
+    Alice->Bob : hello
+    note left
+    a note
+    can also be defined
+    end note
+    Bob->Alice : ok
+    @enduml
+keywords:
+  - "sequence"
+  - "note"
+  - "note left"
+  - "note right"
+  - "end note"
+  - "annotation"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.14 Notes on messages"
+  page: 14

@@ -1,0 +1,68 @@
+QUERY	Concurrent state	PAGES	238,239,597
+CONTEXT	Concurrent state	PAGE	238
+9.7 Concurrent state [–, ||] 9 STATE DIAGRAM
+9.7 Concurrent state [–, ||]
+You can define concurrent state into a composite state using either -- or || symbol as separator.
+9.7.1 Horizontal separator --
+@startuml
+[*] --> Active
+state Active {
+[*] -> NumLockOff
+NumLockOff --> NumLockOn : EvNumLockPressed
+NumLockOn --> NumLockOff : EvNumLockPressed
+--
+[*] -> CapsLockOff
+CapsLockOff --> CapsLockOn : EvCapsLockPressed
+CapsLockOn --> CapsLockOff : EvCapsLockPressed
+--
+[*] -> ScrollLockOff
+ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+}
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 237 / 606
+----
+9.7 Concurrent state [–, ||] 9 STATE DIAGRAM
+9.7 Concurrent state [–, ||]
+You can define concurrent state into a composite state using either -- or || symbol as separator.
+9.7.1 Horizontal separator --
+@startuml
+[*] --> Active
+state Active {
+[*] -> NumLockOff
+NumLockOff --> NumLockOn : EvNumLockPressed
+NumLockOn --> NumLockOff : EvNumLockPressed
+--
+[*] -> CapsLockOff
+CapsLockOff --> CapsLockOn : EvCapsLockPressed
+CapsLockOn --> CapsLockOff : EvCapsLockPressed
+--
+[*] -> ScrollLockOff
+ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+}
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 237 / 606
+----
+9.7 Concurrent state [–, ||] 9 STATE DIAGRAM
+9.7 Concurrent state [–, ||]
+You can define concurrent state into a composite state using either -- or || symbol as separator.
+9.7.1 Horizontal separator --
+@startuml
+[*] --> Active
+state Active {
+[*] -> NumLockOff
+NumLockOff --> NumLockOn : EvNumLockPressed
+NumLockOn --> NumLockOff : EvNumLockPressed
+--
+[*] -> CapsLockOff
+CapsLockOff --> CapsLockOn : EvCapsLockPressed
+CapsLockOn --> CapsLockOff : EvCapsLockPressed
+--
+[*] -> ScrollLockOff
+ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+}
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 237 / 606
+----

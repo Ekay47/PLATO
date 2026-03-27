@@ -1,0 +1,49 @@
+id: "sequence.fragment_par.basic"
+diagram_type: "sequence"
+topic: "par"
+construct: "fragment.par"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence parallel fragments: par / else / end"
+intent:
+  - "run two interactions in parallel"
+  - "happen concurrently"
+  - "parallel fragment"
+syntax: |
+  @startuml
+  participant A
+  participant B
+  participant C
+
+  par
+    A -> B: step1
+  else
+    A -> C: step2
+  end
+  @enduml
+rules:
+  - "Every par block must be closed with end"
+  - "Separate parallel branches with else"
+examples:
+  - |
+    @startuml
+    participant FE
+    participant Audit
+    participant Mail
+    par
+      FE -> Audit: writeLog()
+    else
+      FE -> Mail: send()
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "par"
+  - "else"
+  - "end"
+  - "parallel"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "Grouping message (par)"
+  page: 12

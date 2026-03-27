@@ -1,0 +1,40 @@
+QUERY	[choice]	PAGES	240,597
+CONTEXT	[choice]	PAGE	240
+9.8 Conditional [choice] 9 STATE DIAGRAM
+[Ref. QA-3086]
+9.8 Conditional [choice]
+The stereotype <<choice>> can be used to use conditional state.
+@startuml
+state "Req(Id)" as ReqId <<sdlreceive>>
+state "Minor(Id)" as MinorId
+state "Major(Id)" as MajorId
+state c <<choice>>
+Idle --> ReqId
+ReqId --> c
+c --> MinorId : [Id <= 10]
+c --> MajorId : [Id > 10]
+@enduml
+9.9 Stereotypes full example [start, choice, fork, join, end, history, history*]
+9.9.1 Start, choice, fork, join, end
+@startuml
+PlantUML Language Reference Guide (1.2025.0) 239 / 606
+----
+9.8 Conditional [choice] 9 STATE DIAGRAM
+[Ref. QA-3086]
+9.8 Conditional [choice]
+The stereotype <<choice>> can be used to use conditional state.
+@startuml
+state "Req(Id)" as ReqId <<sdlreceive>>
+state "Minor(Id)" as MinorId
+state "Major(Id)" as MajorId
+state c <<choice>>
+Idle --> ReqId
+ReqId --> c
+c --> MinorId : [Id <= 10]
+c --> MajorId : [Id > 10]
+@enduml
+9.9 Stereotypes full example [start, choice, fork, join, end, history, history*]
+9.9.1 Start, choice, fork, join, end
+@startuml
+PlantUML Language Reference Guide (1.2025.0) 239 / 606
+----

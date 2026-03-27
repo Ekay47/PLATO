@@ -1,0 +1,45 @@
+id: "state.long_name.basic"
+diagram_type: "state"
+topic: "long_name"
+construct: "state.long_name"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "State long names: quoted name and alias (as)"
+intent:
+  - "use a long label for a state"
+  - "state name with spaces and newlines"
+  - "state alias with as"
+syntax: |
+  @startuml
+  [*] --> State3
+  state State3 {
+    state "Accumulate Enough Data\nLong State Name" as long1
+    [*] --> long1
+    long1 --> long1 : New Data
+  }
+  @enduml
+rules:
+  - "Use quotes for long names and newlines with \\n"
+  - "Use as <alias> to reference a state with a long display name"
+examples:
+  - |
+    @startuml
+    [*] --> Outer
+    state Outer {
+      state "Very Long\nHuman Name" as S
+      [*] --> S
+      S --> Done
+    }
+    Done --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "long name"
+  - "quoted state"
+  - "as"
+  - "\\n"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.4 Long name"
+  page: 235

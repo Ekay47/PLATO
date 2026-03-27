@@ -1,0 +1,39 @@
+id: "sequence.participants_multiline.basic"
+diagram_type: "sequence"
+topic: "participants_multiline"
+construct: "participants.multiline_declaration"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence participants: multiline declaration"
+intent:
+  - "declare a participant with a multi-line display name"
+syntax: |
+  @startuml
+  participant Participant [
+    =Title
+    ----
+    ""Subtitle""
+  ]
+  @enduml
+rules:
+  - "Use bracket syntax to declare a participant on multiple lines"
+examples:
+  - |
+    @startuml
+    participant Service [
+      =Order Service
+      ----
+      ""v1""
+    ]
+    @enduml
+keywords:
+  - "sequence"
+  - "participant"
+  - "multiline"
+  - "["
+  - "]"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.3 Declaring participant on multiline"
+  page: 5

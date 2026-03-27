@@ -1,0 +1,37 @@
+QUERY	6.2 Start/Stop/End	PAGES	123,595
+CONTEXT	6.2 Start/Stop/End	PAGE	123
+6 ACTIVITY DIAGRAM (NEW SYNTAX)
+6 Activity Diagram (New Syntax)
+The previous syntax used for activity diagrams encountered several limitations and maintainability issues.
+Recognizing these drawbacks, we have introduced a wholly revamped syntax and implementation that is
+not only user-friendly but also more stable.
+6.0.1 Benefits of the New Syntax
+• No Dependency on Graphviz: Just like with sequence diagrams, the new syntax eliminates the
+necessity for Graphviz installation, thereby simplifying the setup process.
+• Ease of Maintenance: The intuitive nature of the new syntax means it is easier to manage and
+maintain your diagrams.
+6.0.2 T ransition to the New Syntax
+While we will continue to support the old syntax to maintain compatibility, we highly encourage users
+to migrate to the new syntax to leverage the enhanced features and benefits it offers.
+Make the shift today and experience a more streamlined and eﬀicient diagramming process with the new
+activity diagram syntax.
+6.1 Simple action
+Activities label starts with : and ends with ;.
+Text formatting can be done using creole wiki syntax.
+They are implicitly linked in their definition order.
+@startuml
+:Hello world;
+:This is defined on
+several **lines**;
+@enduml
+6.2 Start/Stop/End
+You can use start and stop keywords to denote the beginning and the end of a diagram.
+@startuml
+start
+:Hello world;
+:This is defined on
+several **lines**;
+stop
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 122 / 606
+----

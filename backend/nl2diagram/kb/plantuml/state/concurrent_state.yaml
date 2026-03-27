@@ -1,0 +1,43 @@
+id: "state.concurrent_state.basic"
+diagram_type: "state"
+topic: "concurrent_state"
+construct: "state.concurrent"
+complexity: "intermediate"
+requires_closure: true
+version: "1.2025.0"
+title: "State concurrent regions: -- / ||"
+intent:
+  - "orthogonal/concurrent regions inside a composite state"
+  - "parallel regions"
+syntax: |
+  @startuml
+  state C {
+    [*] --> State1
+    --
+    [*] --> State2
+  }
+  @enduml
+rules:
+  - "Use -- (horizontal) or || (vertical) to split concurrent regions inside a composite state"
+  - "Each region can have its own [*] initial pseudo-state"
+examples:
+  - |
+    @startuml
+    state Order {
+      [*] --> PaymentPending
+      PaymentPending --> Paid
+      --
+      [*] --> Packing
+      Packing --> Shipped
+    }
+    @enduml
+keywords:
+  - "state"
+  - "concurrent"
+  - "orthogonal"
+  - "--"
+  - "||"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.7 Concurrent state [–, ||]"
+  page: 238

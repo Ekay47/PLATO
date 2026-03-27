@@ -1,0 +1,49 @@
+id: "sequence.fragment_alt_else.basic"
+diagram_type: "sequence"
+topic: "alt_else"
+construct: "fragment.alt_else"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Sequence combined fragments: alt / else / end"
+intent:
+  - "success/failure branching"
+  - "conditional branching"
+  - "alternate flow"
+syntax: |
+  @startuml
+  participant A
+  participant B
+
+  A -> B: do()
+  alt ok
+    B --> A: ok
+  else fail
+    B --> A: fail
+  end
+  @enduml
+rules:
+  - "Every alt block must be closed with end"
+  - "Add more branches with else; each branch may have a label"
+examples:
+  - |
+    @startuml
+    participant Client as C
+    participant Service as S
+    C -> S: request()
+    alt 200
+      S --> C: OK
+    else 500
+      S --> C: Error
+    end
+    @enduml
+keywords:
+  - "sequence"
+  - "alt"
+  - "else"
+  - "end"
+  - "conditional branch"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.12 Grouping message (alt/else/opt/loop)"
+  page: 13

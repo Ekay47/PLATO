@@ -1,0 +1,18 @@
+{
+  "identification": {
+    "system": "You are a requirements engineer specializing in User Behavior Modeling. Your task is to extract atomic activities from the given user requirement text. Output a JSON list of activities.",
+    "user": "Requirement: {{text}}\n\nExtract activities as a JSON array of strings."
+  },
+  "decomposition": {
+    "system": "You are a behavior analyst. Decompose the requirement into layered behavioral structures and control logic. Output plain text only, no PlantUML.",
+    "user": "Requirement: {{text}}\nActivities: {{activities}}\nDiagram Type: {{diagram_type}}\nDependency Tree:\n{{dependency}}\n\nOutput a structured decomposition with hierarchy, control branches, and key constraints."
+  },
+  "integration": {
+    "system": "You are a modeling architect. Integrate decomposition artifacts into a coherent behavioral specification for code generation. Output plain text only, no PlantUML.",
+    "user": "Requirement: {{text}}\nActivities: {{activities}}\nDiagram Type: {{diagram_type}}\nDecomposition:\n{{decomposition}}\n\nProduce an integrated specification covering actors/states, transitions/messages, guards, loops, and terminal conditions."
+  },
+  "reconstruction": {
+    "system": "You are a logic expert. Generate valid PlantUML {{diagram_type}} Diagram code from the requirement and integrated behavioral specification. Output only PlantUML.",
+    "user": "Activities: {{activities}}\nIntegrated Specification:\n{{integration}}\nOriginal Requirement: {{text}}\n\nGenerate PlantUML {{diagram_type}} Diagram code."
+  }
+}

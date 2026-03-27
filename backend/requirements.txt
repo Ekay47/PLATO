@@ -1,0 +1,16 @@
+fastapi==0.128.8
+uvicorn==0.39.0
+pydantic==2.12.5
+httpx==0.28.1
+langchain==0.3.28
+langchain-openai==0.3.35
+langgraph==0.6.11
+pyyaml==6.0.3
+fastcoref==2.1.6
+spacy==3.7.4
+torch==2.2.2
+scipy==1.13.1
+datasets==2.19.2
+transformers==4.41.2
+aiohttp==3.9.5
+./src/utils/en_core_web_sm-3.7.1-py3-none-any.whl

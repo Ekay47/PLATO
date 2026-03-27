@@ -1,0 +1,56 @@
+id: "activity.while_loop.basic"
+diagram_type: "activity"
+topic: "while_loop"
+construct: "loop.while"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity loop: while / endwhile"
+intent:
+  - "repeat while a condition holds"
+  - "loop until the condition becomes false"
+  - "while loop"
+syntax: |
+  @startuml
+  start
+  :Initialize;
+  while (Continue?) is (yes)
+    :Loop body;
+  endwhile (no)
+  :Finalize;
+  stop
+  @enduml
+parameters:
+  - name: "condition_text"
+    type: "string"
+    required: true
+    default: null
+    constraints:
+      - "Put the condition text inside while ( ... )"
+    examples:
+      - "Retries remaining?"
+      - "Queue not empty?"
+rules:
+  - "Every while block must be closed with endwhile"
+  - "The loop body should contain at least one :action; statement"
+examples:
+  - |
+    @startuml
+    start
+    :attempt=0;
+    while (attempt < 3?) is (yes)
+      :Call API;
+      :attempt=attempt+1;
+    endwhile (no)
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "while"
+  - "endwhile"
+  - "loop"
+  - "looping"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.9 While loop"
+  page: 132

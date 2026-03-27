@@ -1,0 +1,96 @@
+QUERY	create	PAGES	22,23,24,25,26,34,35,51,62,106,165,186,232,336,338,356,409,423,436,441,493,528,529,530,533,540,546,566,568,572,577,578,581,604
+CONTEXT	create	PAGE	22
+The destroy denote the end of the lifeline of a participant.
+@startuml
+participant User
+User -> A: DoWork
+activate A
+A -> B: << createRequest >>
+activate B
+B -> C: DoWork
+activate C
+C --> B: WorkDone
+destroy C
+----
+activate B
+B -> C: DoWork
+activate C
+C --> B: WorkDone
+destroy C
+B --> A: RequestCreated
+deactivate B
+A -> User: Done
+deactivate A
+@enduml
+Nested lifeline can be used, and it is possible to add a color on the lifeline.
+----
+participant User
+User -> A: DoWork
+activate A #FFBBBB
+A -> A: Internal call
+activate A #DarkSalmon
+A -> B: << createRequest >>
+activate B
+B --> A: RequestCreated
+deactivate B
+deactivate A
+A -> User: Done
+----
+activate A #FFBBBB
+A -> A: Internal call
+activate A #DarkSalmon
+A -> B: << createRequest >>
+activate B
+B --> A: RequestCreated
+deactivate B
+deactivate A
+A -> User: Done
+deactivate A
+@enduml
+----
+CONTEXT	create	PAGE	23
+@startuml
+autoactivate on
+alice -> bob : hello
+bob -> bob : self call
+bill -> bob #005500 : hello from thread 2
+bob -> george ** : create
+return done in thread 2
+return rc
+bob -> george !! : delete
+return success
+@enduml
+----
+QUERY	destroy	PAGES	22,24,34,35,121,528,530,533,545,546,561
+CONTEXT	destroy	PAGE	22
+1.25 Lifeline Activation and Destruction 1 SEQUENCE DIAGRAM
+The destroy denote the end of the lifeline of a participant.
+@startuml
+participant User
+User -> A: DoWork
+activate A
+A -> B: << createRequest >>
+----
+A -> B: << createRequest >>
+activate B
+B -> C: DoWork
+activate C
+C --> B: WorkDone
+destroy C
+B --> A: RequestCreated
+deactivate B
+A -> User: Done
+deactivate A
+@enduml
+----
+CONTEXT	destroy	PAGE	24
+1.28 Shortcut syntax for activation, deactivation, creation
+Immediately after specifying the target participant, the following syntax can be used:
+• ++ Activate the target (optionally a color may follow this)
+• -- Deactivate the source
+• ** Create an instance of the target
+• !! Destroy an instance of the target
+@startuml
+alice -> bob ++ : hello
+PlantUML Language Reference Guide (1.2025.0) 23 / 606
+----

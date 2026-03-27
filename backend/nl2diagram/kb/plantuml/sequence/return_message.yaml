@@ -1,0 +1,32 @@
+id: "sequence.return_message.basic"
+diagram_type: "sequence"
+topic: "return_message"
+construct: "message.return"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence return keyword"
+intent:
+  - "return from a call"
+  - "implicit return message"
+syntax: |
+  @startuml
+  Bob -> Alice : hello
+  return ok
+  @enduml
+rules:
+  - "Use return <text> to generate a return message"
+examples:
+  - |
+    @startuml
+    Client -> Service : request()
+    return 200 OK
+    @enduml
+keywords:
+  - "sequence"
+  - "return"
+  - "response"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.26 Return"
+  page: 23

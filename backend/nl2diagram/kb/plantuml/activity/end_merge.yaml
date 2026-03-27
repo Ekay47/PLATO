@@ -1,0 +1,44 @@
+id: "activity.end_merge.basic"
+diagram_type: "activity"
+topic: "end_merge"
+construct: "concurrency.end_merge"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity concurrency: end merge"
+intent:
+  - "merge parallel branches"
+  - "end merge keyword"
+syntax: |
+  @startuml
+  start
+  fork
+    :action 1;
+  fork again
+    :action 2;
+  end merge
+  stop
+  @enduml
+rules:
+  - "Use end merge to merge branches (alternative to end fork)"
+examples:
+  - |
+    @startuml
+    start
+    fork
+      :Fetch;
+    fork again
+      :Validate;
+    end merge
+    :Continue;
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "fork"
+  - "fork again"
+  - "end merge"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.10.2 fork with end merge"
+  page: 134

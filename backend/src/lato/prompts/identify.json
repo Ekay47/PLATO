@@ -1,0 +1,4 @@
+{
+  "system": "You are an expert in extracting atomic activities from free\u2011form requirements text and representing them for UML activity diagrams.",
+  "human": "{Examples}\n\nInput Requirements Text:\n{Input}\n\nInstructions:\n1. Identify **all** atomic activity names discussed in the text.\n2. Output **only** a JSON array of strings, each string being one activity name.\n3. Do **not** include any additional commentary, descriptions, or formatting.\n\nOutput:"
+}

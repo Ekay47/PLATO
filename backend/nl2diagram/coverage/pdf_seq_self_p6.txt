@@ -1,0 +1,52 @@
+QUERY	Message to Self	PAGES	6,592
+CONTEXT	Message to Self	PAGE	6
+1.5 Message to Self 1 SEQUENCE DIAGRAM
+1.5 Message to Self
+A participant can send a message to itself.
+It is also possible to have multi-line using \n.
+@startuml
+Alice -> Alice: This is a signal to self.\nIt also demonstrates\nmultiline \ntext
+@enduml
+@startuml
+Alice <- Alice: This is a signal to self.\nIt also demonstrates\nmultiline \ntext
+@enduml
+[Ref. QA-1361]
+1.6 Text alignment
+Text alignment on arrows can be set to left, right or center using skinparam sequenceMessageAlign .
+You can also use direction or reverseDirection to align text depending on arrow direction. Further
+details and examples of this are available on the skinparam page.
+@startuml
+skinparam sequenceMessageAlign right
+Bob -> Alice : Request
+Alice -> Bob : Response
+@enduml
+1.6.1 T ext of response message below the arrow
+You can put the text of the response message below the arrow, with the skinparam responseMessageBelowArrow
+true command.
+PlantUML Language Reference Guide (1.2025.0) 5 / 606
+----
+1.5 Message to Self 1 SEQUENCE DIAGRAM
+1.5 Message to Self
+A participant can send a message to itself.
+It is also possible to have multi-line using \n.
+@startuml
+Alice -> Alice: This is a signal to self.\nIt also demonstrates\nmultiline \ntext
+@enduml
+@startuml
+Alice <- Alice: This is a signal to self.\nIt also demonstrates\nmultiline \ntext
+@enduml
+[Ref. QA-1361]
+1.6 Text alignment
+Text alignment on arrows can be set to left, right or center using skinparam sequenceMessageAlign .
+You can also use direction or reverseDirection to align text depending on arrow direction. Further
+details and examples of this are available on the skinparam page.
+@startuml
+skinparam sequenceMessageAlign right
+Bob -> Alice : Request
+Alice -> Bob : Response
+@enduml
+1.6.1 T ext of response message below the arrow
+You can put the text of the response message below the arrow, with the skinparam responseMessageBelowArrow
+true command.
+PlantUML Language Reference Guide (1.2025.0) 5 / 606
+----

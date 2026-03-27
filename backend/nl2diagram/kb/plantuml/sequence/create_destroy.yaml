@@ -1,0 +1,43 @@
+id: "sequence.create_destroy.basic"
+diagram_type: "sequence"
+topic: "create_destroy"
+construct: "lifeline.create_destroy"
+complexity: "intermediate"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence creation and deletion: ** / !!"
+intent:
+  - "create a participant during the interaction"
+  - "delete a participant during the interaction"
+syntax: |
+  @startuml
+  autoactivate on
+  alice -> bob : hello
+  bob -> george ** : create
+  return created
+  bob -> george !! : delete
+  return deleted
+  @enduml
+rules:
+  - "Use ** : create to show creation"
+  - "Use !! : delete to show deletion"
+examples:
+  - |
+    @startuml
+    autoactivate on
+    Client -> Worker : start
+    Worker -> Temp ** : create
+    return ok
+    Worker -> Temp !! : delete
+    return done
+    @enduml
+keywords:
+  - "sequence"
+  - "create"
+  - "delete"
+  - "**"
+  - "!!"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "1.26 Return"
+  page: 23

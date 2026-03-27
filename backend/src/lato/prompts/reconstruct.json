@@ -1,0 +1,4 @@
+{
+  "system": "You are an expert in integrating analysed requirement information into a structured format.",
+  "human": "{Examples}\n\nInput:\n{Input}\n\nTask:\"\"\"1. Integrate the identified activities and layerwise decomposed relations for above requirements.\n   2. Reformat everything into a well\u2011structured representation that:\n     \u2022 Captures all activities (start, end, decision, fork, join, loops\u2026)  \n     \u2022 Preserves layerwise and sequential relations  \n     \u2022 Keeps wording faithful to the original text\n   3. Return only the structured data\u2014no extra commentary.\n\n\"\"\"Output:"
+}

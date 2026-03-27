@@ -1,0 +1,122 @@
+QUERY	elseif	PAGES	125,126,541,606
+CONTEXT	elseif	PAGE	125
+6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+• if (...) is (...) then ... [else (...) ...] endif
+@startuml
+if (color?) is (<color:red>red) then
+:print red;
+else
+:print not red;
+endif
+@enduml
+• if (...) equals (...) then ... [else (...) ...] endif
+@startuml
+if (counter?) equals (5) then
+:print 5;
+else
+:print not 5;
+endif
+@enduml
+[Ref. QA-301]
+6.3.1 Several tests (horizontal mode)
+You can use the elseif keyword to have several tests (by default, it is the horizontal mode) :
+@startuml
+start
+if (condition A) then (yes)
+:Text 1;
+elseif (condition B) then (yes)
+:Text 2;
+stop
+(no) elseif (condition C) then (yes)
+:Text 3;
+(no) elseif (condition D) then (yes)
+PlantUML Language Reference Guide (1.2025.0) 124 / 606
+----
+6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+• if (...) is (...) then ... [else (...) ...] endif
+@startuml
+if (color?) is (<color:red>red) then
+:print red;
+else
+:print not red;
+endif
+@enduml
+• if (...) equals (...) then ... [else (...) ...] endif
+@startuml
+if (counter?) equals (5) then
+:print 5;
+else
+:print not 5;
+endif
+@enduml
+[Ref. QA-301]
+6.3.1 Several tests (horizontal mode)
+You can use the elseif keyword to have several tests (by default, it is the horizontal mode) :
+@startuml
+start
+if (condition A) then (yes)
+:Text 1;
+elseif (condition B) then (yes)
+:Text 2;
+stop
+(no) elseif (condition C) then (yes)
+:Text 3;
+(no) elseif (condition D) then (yes)
+PlantUML Language Reference Guide (1.2025.0) 124 / 606
+----
+6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+• if (...) is (...) then ... [else (...) ...] endif
+@startuml
+if (color?) is (<color:red>red) then
+:print red;
+else
+:print not red;
+endif
+@enduml
+• if (...) equals (...) then ... [else (...) ...] endif
+@startuml
+if (counter?) equals (5) then
+:print 5;
+else
+:print not 5;
+endif
+@enduml
+[Ref. QA-301]
+6.3.1 Several tests (horizontal mode)
+You can use the elseif keyword to have several tests (by default, it is the horizontal mode) :
+@startuml
+start
+if (condition A) then (yes)
+:Text 1;
+elseif (condition B) then (yes)
+:Text 2;
+stop
+(no) elseif (condition C) then (yes)
+:Text 3;
+(no) elseif (condition D) then (yes)
+PlantUML Language Reference Guide (1.2025.0) 124 / 606
+----
+6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+• if (...) is (...) then ... [else (...) ...] endif
+@startuml
+if (color?) is (<color:red>red) then
+:print red;
+else
+:print not red;
+endif
+@enduml
+• if (...) equals (...) then ... [else (...) ...] endif
+@startuml
+if (counter?) equals (5) then
+:print 5;
+else
+:print not 5;
+endif
+@enduml
+[Ref. QA-301]
+6.3.1 Several tests (horizontal mode)
+You can use the elseif keyword to have several tests (by default, it is the horizontal mode) :
+@startuml
+start
+if (condition A) then (yes)
+:Text 1;

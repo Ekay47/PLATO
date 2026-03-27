@@ -1,0 +1,114 @@
+QUERY	fork	PAGES	134,135,136,151,152,237,240,241,242,595,597
+CONTEXT	fork	PAGE	237
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----
+9.6 Fork [fork, join] 9 STATE DIAGRAM
+9.6 Fork [fork, join]
+You can also fork and join using the <<fork>> and <<join>> stereotypes.
+@startuml
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 236 / 606
+----

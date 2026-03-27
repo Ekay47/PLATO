@@ -1,0 +1,151 @@
+# Chapter 6 headings
+
+- p.123: 6.0.1 Benefits of the New Syntax
+- p.123: 6.0.2 T ransition to the New Syntax
+- p.123: 6.1 Simple action
+- p.123: 6.2 Start/Stop/End
+- p.124: 6.3 Conditional
+- p.124: 6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.125: 6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.125: 6.3.1 Several tests (horizontal mode)
+- p.126: 6.3 Conditional 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.126: 6.3.2 Several tests (vertical mode)
+- p.127: 6.4 Switch and case [switch, case, endswitch]
+- p.127: 6.4 Switch and case [switch, case, endswitch] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.128: 6.5 Conditional with stop on an action [kill, detach]
+- p.128: 6.5 Conditional with stop on an action [kill, detach] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.129: 6.6 Repeat loop
+- p.129: 6.6 Repeat loop 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.129: 6.6.1 Simple repeat loop
+- p.129: 6.6.2 Repeat loop with repeat action and backward action
+- p.130: 6.7 Break on a repeat loop [break]
+- p.130: 6.7 Break on a repeat loop [break] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.131: 6.8 Goto and Label Processing [label, goto]
+- p.131: 6.8 Goto and Label Processing [label, goto] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.132: 6.9 While loop
+- p.132: 6.9 While loop 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.132: 6.9.1 Simple while loop
+- p.133: 6.9 While loop 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.133: 6.9.2 While loop with backward action
+- p.133: 6.9.3 Infinite while loop
+- p.134: 6.10 Parallel processing [fork, fork again, end fork, end merge]
+- p.134: 6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.134: 6.10.1 Simple fork
+- p.134: 6.10.2 fork with end merge
+- p.135: 6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.135: 6.10.3 Label on end fork (or UML joinspec):
+- p.136: 6.10 Parallel processing [fork, fork again, end fork, end merge] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.136: 6.10.4 Other example
+- p.137: 6.11 Split processing
+- p.137: 6.11 Split processing 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.137: 6.11.1 Split
+- p.137: 6.11.2 Input split (multi-start)
+- p.138: 6.11 Split processing 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.138: 6.11.3 Output split (multi-end)
+- p.139: 6.12 Notes
+- p.139: 6.12 Notes 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.140: 6.12 Notes 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.141: 6.13 Colors
+- p.141: 6.13 Colors 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.142: 6.14 Lines without arrows
+- p.142: 6.14 Lines without arrows 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.142: 6.15 Arrows
+- p.143: 6.16 Connector
+- p.143: 6.16 Connector 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.143: 6.17 Color on connector
+- p.144: 6.18 Grouping or partition
+- p.144: 6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.144: 6.18.1 Group
+- p.145: 6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.145: 6.18.2 Partition
+- p.146: 6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.147: 6.18 Grouping or partition 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.147: 6.18.3 Group, Partition, Package, Rectangle or Card
+- p.148: 6.19 Swimlanes
+- p.148: 6.19 Swimlanes 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.149: 6.19 Swimlanes 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.150: 6.19 Swimlanes 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.151: 6.20 Detach or kill [detach, kill]
+- p.151: 6.20 Detach or kill [detach, kill] 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.152: 6.21 SDL (Specification and Description Language)
+- p.152: 6.21 SDL (Specification and Description Language) 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.152: 6.21.1 T able of SDL Shape Name
+- p.152: 6.21.2 SDL using final separator (Deprecated form)
+- p.153: 6.21 SDL (Specification and Description Language) 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.154: 6.21 SDL (Specification and Description Language) 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.154: 6.21.3 SDL using Normal separator and Stereotype (Current oﬀiial form)
+- p.155: 6.22 Complete example
+- p.155: 6.22 Complete example 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.156: 6.22 Complete example 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.157: 6.23 Condition Style
+- p.157: 6.23 Condition Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.157: 6.23.1 Inside style (by default)
+- p.158: 6.23 Condition Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.158: 6.23.2 Diamond style
+- p.159: 6.23 Condition Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.159: 6.23.3 InsideDiamond (or Foo1) style
+- p.160: 6.24 Condition End Style
+- p.160: 6.24 Condition End Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.160: 6.24.1 Diamond style (by default)
+- p.161: 6.24 Condition End Style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.161: 6.24.2 Horizontal line (hline) style
+- p.162: 6.25 Using (global) style
+- p.162: 6.25 Using (global) style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.162: 6.25.1 Without style (by default)
+- p.162: 6.25.2 With style
+- p.163: 6.25 Using (global) style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.164: 6.25 Using (global) style 6 ACTIVITY DIAGRAM (NEW SYNTAX)
+- p.595: 6.0.1 Benefits of the New Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+- p.595: 6.0.2 Transition to the New Syntax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+- p.595: 6.1 Simple action . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+- p.595: 6.10 Parallel processing [fork, fork again, end fork, end merge] . . . . . . . . . . . . . . . . . . 133
+- p.595: 6.10.1 Simple fork . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+- p.595: 6.10.2 fork with end merge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+- p.595: 6.10.3 Label on end fork (or UML joinspec): . . . . . . . . . . . . . . . . . . . . . . . . . 134
+- p.595: 6.10.4 Other example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 135
+- p.595: 6.11 Split processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+- p.595: 6.11.1 Split . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+- p.595: 6.11.2 Input split (multi-start) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+- p.595: 6.11.3 Output split (multi-end) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+- p.595: 6.12 Notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+- p.595: 6.13 Colors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+- p.595: 6.14 Lines without arrows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+- p.595: 6.15 Arrows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+- p.595: 6.16 Connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+- p.595: 6.17 Color on connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+- p.595: 6.18 Grouping or partition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+- p.595: 6.18.1 Group . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+- p.595: 6.18.2 Partition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+- p.595: 6.18.3 Group, Partition, Package, Rectangle or Card . . . . . . . . . . . . . . . . . . . . . 146
+- p.595: 6.19 Swimlanes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+- p.595: 6.2 Start/Stop/End . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+- p.595: 6.20 Detach or kill [detach, kill] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 150
+- p.595: 6.21 SDL (Specification and Description Language) . . . . . . . . . . . . . . . . . . . . . . . . 151
+- p.595: 6.21.1 Table of SDL Shape Name . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+- p.595: 6.21.2 SDL using final separator (Deprecated form) . . . . . . . . . . . . . . . . . . . . . 151
+- p.595: 6.21.3 SDL using Normal separator and Stereotype (Current oﬀiial form) . . . . . . . . . 153
+- p.595: 6.22 Complete example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+- p.595: 6.23 Condition Style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+- p.595: 6.23.1 Inside style (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+- p.595: 6.23.2 Diamond style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+- p.595: 6.23.3 InsideDiamond (or Foo1) style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
+- p.595: 6.24 Condition End Style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+- p.595: 6.24.1 Diamond style (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+- p.595: 6.24.2 Horizontal line (hline) style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
+- p.595: 6.3 Conditional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+- p.595: 6.3.1 Several tests (horizontal mode) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+- p.595: 6.3.2 Several tests (vertical mode) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+- p.595: 6.4 Switch and case [switch, case, endswitch] . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+- p.595: 6.5 Conditional with stop on an action [kill, detach] . . . . . . . . . . . . . . . . . . . . . . . . 127
+- p.595: 6.6 Repeat loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+- p.595: 6.6.1 Simple repeat loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+- p.595: 6.6.2 Repeat loop with repeat action and backward action . . . . . . . . . . . . . . . . . 128
+- p.595: 6.7 Break on a repeat loop [break] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
+- p.595: 6.8 Goto and Label Processing [label, goto] . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+- p.595: 6.9 While loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
+- p.595: 6.9.1 Simple while loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
+- p.595: 6.9.2 While loop with backward action . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+- p.595: 6.9.3 Infinite while loop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+- p.596: 6.25 Using (global) style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+- p.596: 6.25.1 Without style (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+- p.596: 6.25.2 With style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161

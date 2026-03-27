@@ -1,0 +1,48 @@
+id: "state.fork_join.basic"
+diagram_type: "state"
+topic: "fork_join"
+construct: "state.fork_join"
+complexity: "intermediate"
+requires_closure: false
+version: "1.2025.0"
+title: "State fork/join: <<fork>> / <<join>>"
+intent:
+  - "split into multiple concurrent paths and join later"
+  - "fork and join pseudo-states"
+syntax: |
+  @startuml
+  state fork1 <<fork>>
+  state join1 <<join>>
+  [*] --> fork1
+  fork1 --> State1
+  fork1 --> State2
+  State1 --> join1
+  State2 --> join1
+  join1 --> [*]
+  @enduml
+rules:
+  - "Use <<fork>> to split into multiple outgoing transitions"
+  - "Use <<join>> to merge multiple incoming transitions"
+examples:
+  - |
+    @startuml
+    state fork1 <<fork>>
+    state join1 <<join>>
+    [*] --> fork1
+    fork1 --> Fetch
+    fork1 --> Validate
+    Fetch --> join1
+    Validate --> join1
+    join1 --> Done
+    Done --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "fork"
+  - "join"
+  - "<<fork>>"
+  - "<<join>>"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.6 Fork [fork, join]"
+  page: 237

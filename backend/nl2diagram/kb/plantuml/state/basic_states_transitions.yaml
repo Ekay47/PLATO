@@ -1,0 +1,49 @@
+id: "state.basic_states_transitions.basic"
+diagram_type: "state"
+topic: "basic_states_transitions"
+construct: "transition.basic"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "State basics and transitions: [*] / --> / event labels"
+intent:
+  - "state machine"
+  - "initial to final flow"
+  - "state transition"
+syntax: |
+  @startuml
+  [*] --> Idle
+  Idle --> Processing : start
+  Processing --> Idle : done
+  Processing --> [*] : cancel
+  @enduml
+parameters:
+  - name: "event_label"
+    type: "string"
+    required: false
+    default: null
+    constraints:
+      - "Put it after the transition arrow, separated by ':'"
+    examples:
+      - "start"
+      - "timeout"
+rules:
+  - "Use [*] for initial and final pseudo-states"
+  - "Use ': event' for transition labels; add guard/action only when needed"
+examples:
+  - |
+    @startuml
+    [*] --> LoggingIn
+    LoggingIn --> LoggedIn : success
+    LoggingIn --> [*] : fail
+    @enduml
+keywords:
+  - "state"
+  - "[*]"
+  - "-->"
+  - "transition"
+  - "state machine"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.1 Simple State"
+  page: 232

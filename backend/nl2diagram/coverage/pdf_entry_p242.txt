@@ -1,0 +1,122 @@
+QUERY	entry	PAGES	242,243,244,597
+CONTEXT	entry	PAGE	242
+9.10 Point [entryPoint, exitPoint] 9 STATE DIAGRAM
+9.9.2 History , history*
+@startuml
+state A {
+state s1 as "Start 1" <<start>>
+state s2 as "H 2" <<history>>
+state s3 as "H 3" <<history*>>
+}
+@enduml
+[Ref. QA-16824]
+9.9.3 Minimal example with all stereotypes
+@startuml
+state start1 <<start>>
+----
+9.9.3 Minimal example with all stereotypes
+@startuml
+state start1 <<start>>
+state choice1 <<choice>>
+state fork1 <<fork>>
+state join2 <<join>>
+state end3 <<end>>
+state sdlreceive <<sdlreceive>>
+state history <<history>>
+state history2 <<history*>>
+@enduml
+[Ref. QA-19174]
+9.10 Point [entryPoint, exitPoint]
+You can add point with <<entryPoint>> and <<exitPoint>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<entryPoint>>
+state entry2 <<entryPoint>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<exitPoint>>
+}
+[*] --> entry1
+----
+@startuml
+state start1 <<start>>
+state choice1 <<choice>>
+state fork1 <<fork>>
+state join2 <<join>>
+state end3 <<end>>
+state sdlreceive <<sdlreceive>>
+state history <<history>>
+state history2 <<history*>>
+@enduml
+[Ref. QA-19174]
+9.10 Point [entryPoint, exitPoint]
+You can add point with <<entryPoint>> and <<exitPoint>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<entryPoint>>
+state entry2 <<entryPoint>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<exitPoint>>
+}
+[*] --> entry1
+exitA --> Foo
+----
+state fork1 <<fork>>
+state join2 <<join>>
+state end3 <<end>>
+state sdlreceive <<sdlreceive>>
+state history <<history>>
+state history2 <<history*>>
+@enduml
+[Ref. QA-19174]
+9.10 Point [entryPoint, exitPoint]
+You can add point with <<entryPoint>> and <<exitPoint>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<entryPoint>>
+state entry2 <<entryPoint>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<exitPoint>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 241 / 606
+----
+state join2 <<join>>
+state end3 <<end>>
+state sdlreceive <<sdlreceive>>
+state history <<history>>
+state history2 <<history*>>
+@enduml
+[Ref. QA-19174]
+9.10 Point [entryPoint, exitPoint]
+You can add point with <<entryPoint>> and <<exitPoint>> stereotypes:
+@startuml
+state Somp {
+state entry1 <<entryPoint>>
+state entry2 <<entryPoint>>
+state sin
+entry1 --> sin
+entry2 -> sin
+sin -> sin2
+sin2 --> exitA <<exitPoint>>
+}
+[*] --> entry1
+exitA --> Foo
+Foo1 -> entry2
+@enduml
+PlantUML Language Reference Guide (1.2025.0) 241 / 606
+----
+state sdlreceive <<sdlreceive>>
+state history <<history>>
+state history2 <<history*>>

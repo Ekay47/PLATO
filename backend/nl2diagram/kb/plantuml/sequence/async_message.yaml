@@ -1,0 +1,37 @@
+id: "sequence.async_message.basic"
+diagram_type: "sequence"
+topic: "async_message"
+construct: "message.async"
+complexity: "basic"
+requires_closure: false
+version: "1.2025.0"
+title: "Sequence async messages: ->>"
+intent:
+  - "asynchronous call"
+  - "do not wait for return"
+  - "async message arrow"
+syntax: |
+  @startuml
+  participant Bob
+  participant Alice
+  Bob ->> Alice: async call
+  @enduml
+rules:
+  - "Use ->> for asynchronous message arrows"
+  - "If a return is needed, add a separate --> return message"
+examples:
+  - |
+    @startuml
+    participant Producer as P
+    participant Queue as Q
+    P ->> Q: publish(event)
+    @enduml
+keywords:
+  - "sequence"
+  - "->>"
+  - "async"
+  - "asynchronous"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "Sequence Diagram: arrows"
+  page: 7

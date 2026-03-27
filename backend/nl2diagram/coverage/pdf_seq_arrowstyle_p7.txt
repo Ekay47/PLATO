@@ -1,0 +1,95 @@
+QUERY	Change arrow style	PAGES	7,592
+CONTEXT	Change arrow style	PAGE	7
+1.7 Change arrow style 1 SEQUENCE DIAGRAM
+@startuml
+skinparam responseMessageBelowArrow true
+Bob -> Alice : hello
+Bob <- Alice : ok
+@enduml
+1.7 Change arrow style
+You can change arrow style by several ways:
+• add a final x to denote a lost message
+• use \ or / instead of < or > to have only the bottom or top part of the arrow
+• repeat the arrow head (for example, >> or //) head to have a thin drawing
+• use -- instead of - to have a dotted arrow
+• add a final ”o” at arrow head
+• use bidirectional arrow <->
+@startuml
+Bob ->x Alice
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+Bob ->o Alice
+Bob o\\-- Alice
+Bob <-> Alice
+Bob <->o Alice
+@enduml
+1.8 Change arrow color
+You can change the color of individual arrows using the following notation:
+@startuml
+PlantUML Language Reference Guide (1.2025.0) 6 / 606
+----
+1.7 Change arrow style 1 SEQUENCE DIAGRAM
+@startuml
+skinparam responseMessageBelowArrow true
+Bob -> Alice : hello
+Bob <- Alice : ok
+@enduml
+1.7 Change arrow style
+You can change arrow style by several ways:
+• add a final x to denote a lost message
+• use \ or / instead of < or > to have only the bottom or top part of the arrow
+• repeat the arrow head (for example, >> or //) head to have a thin drawing
+• use -- instead of - to have a dotted arrow
+• add a final ”o” at arrow head
+• use bidirectional arrow <->
+@startuml
+Bob ->x Alice
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+Bob ->o Alice
+Bob o\\-- Alice
+Bob <-> Alice
+Bob <->o Alice
+@enduml
+1.8 Change arrow color
+You can change the color of individual arrows using the following notation:
+@startuml
+PlantUML Language Reference Guide (1.2025.0) 6 / 606
+----
+1.7 Change arrow style 1 SEQUENCE DIAGRAM
+@startuml
+skinparam responseMessageBelowArrow true
+Bob -> Alice : hello
+Bob <- Alice : ok
+@enduml
+1.7 Change arrow style
+You can change arrow style by several ways:
+• add a final x to denote a lost message
+• use \ or / instead of < or > to have only the bottom or top part of the arrow
+• repeat the arrow head (for example, >> or //) head to have a thin drawing
+• use -- instead of - to have a dotted arrow
+• add a final ”o” at arrow head
+• use bidirectional arrow <->
+@startuml
+Bob ->x Alice
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+Bob ->o Alice
+Bob o\\-- Alice
+Bob <-> Alice
+Bob <->o Alice
+@enduml
+1.8 Change arrow color
+You can change the color of individual arrows using the following notation:
+@startuml
+PlantUML Language Reference Guide (1.2025.0) 6 / 606
+----

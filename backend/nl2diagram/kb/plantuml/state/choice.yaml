@@ -1,0 +1,40 @@
+id: "state.choice.basic"
+diagram_type: "state"
+topic: "choice"
+construct: "state.choice"
+complexity: "intermediate"
+requires_closure: false
+version: "1.2025.0"
+title: "State choice: <<choice>> (conditional transitions)"
+intent:
+  - "branch based on guards/conditions"
+  - "conditional pseudo-state"
+syntax: |
+  @startuml
+  state c <<choice>>
+  [*] --> c
+  c --> State1 : [Id <= 10]
+  c --> State2 : [Id > 10]
+  @enduml
+rules:
+  - "Declare a choice pseudo-state with state X <<choice>>"
+  - "Put guard conditions on outgoing transitions, e.g. : [condition]"
+examples:
+  - |
+    @startuml
+    state c <<choice>>
+    [*] --> c
+    c --> Accepted : [score >= 60]
+    c --> Rejected : [score < 60]
+    Accepted --> [*]
+    Rejected --> [*]
+    @enduml
+keywords:
+  - "state"
+  - "choice"
+  - "<<choice>>"
+  - "guard"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "9.8 Conditional [choice]"
+  page: 240

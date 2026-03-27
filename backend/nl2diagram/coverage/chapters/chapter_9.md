@@ -1,0 +1,94 @@
+# Chapter 9 headings
+
+- p.232: 9.1 Simple State
+- p.232: 9.2 Change state rendering
+- p.233: 9.3 Composite state
+- p.233: 9.3 Composite state 9 STATE DIAGRAM
+- p.233: 9.3.1 Internal sub-state
+- p.234: 9.3 Composite state 9 STATE DIAGRAM
+- p.234: 9.3.2 Sub-state to sub-state
+- p.235: 9.4 Long name
+- p.235: 9.4 Long name 9 STATE DIAGRAM
+- p.236: 9.5 History [[H], [H*]]
+- p.236: 9.5 History [[H], [H*]] 9 STATE DIAGRAM
+- p.237: 9.6 Fork [fork, join]
+- p.237: 9.6 Fork [fork, join] 9 STATE DIAGRAM
+- p.238: 9.7 Concurrent state [–, ||]
+- p.238: 9.7 Concurrent state [–, ||] 9 STATE DIAGRAM
+- p.238: 9.7.1 Horizontal separator --
+- p.239: 9.7 Concurrent state [–, ||] 9 STATE DIAGRAM
+- p.239: 9.7.2 V ertical separator ||
+- p.240: 9.8 Conditional [choice]
+- p.240: 9.8 Conditional [choice] 9 STATE DIAGRAM
+- p.240: 9.9 Stereotypes full example [start, choice, fork, join, end, history, history*]
+- p.240: 9.9.1 Start, choice, fork, join, end
+- p.241: 9.9 Stereotypes full example [start, choice, fork, join, end, history, history*] 9 STATE DIAGRAM
+- p.242: 9.10 Point [entryPoint, exitPoint]
+- p.242: 9.10 Point [entryPoint, exitPoint] 9 STATE DIAGRAM
+- p.242: 9.9.2 History , history*
+- p.242: 9.9.3 Minimal example with all stereotypes
+- p.243: 9.11 Pin [inputPin, outputPin]
+- p.243: 9.11 Pin [inputPin, outputPin] 9 STATE DIAGRAM
+- p.244: 9.12 Expansion [expansionInput, expansionOutput]
+- p.244: 9.12 Expansion [expansionInput, expansionOutput] 9 STATE DIAGRAM
+- p.245: 9.13 Arrow direction
+- p.245: 9.13 Arrow direction 9 STATE DIAGRAM
+- p.246: 9.14 Change line color and style
+- p.246: 9.14 Change line color and style 9 STATE DIAGRAM
+- p.246: 9.15 Note
+- p.247: 9.16 Note on link
+- p.247: 9.16 Note on link 9 STATE DIAGRAM
+- p.247: 9.17 More in notes
+- p.248: 9.18 Inline color
+- p.248: 9.18 Inline color 9 STATE DIAGRAM
+- p.249: 9.19 Skinparam
+- p.249: 9.19 Skinparam 9 STATE DIAGRAM
+- p.250: 9.19.1 T est of all specific skinparam to State Diagrams
+- p.250: 9.20 Changing style
+- p.250: 9.20 Changing style 9 STATE DIAGRAM
+- p.251: 9.20 Changing style 9 STATE DIAGRAM
+- p.252: 9.21 Change state color and style (inline style)
+- p.252: 9.21 Change state color and style (inline style) 9 STATE DIAGRAM
+- p.253: 9.22 Alias
+- p.253: 9.22 Alias 9 STATE DIAGRAM
+- p.254: 9.23 Display JSON Data on State diagram
+- p.254: 9.23 Display JSON Data on State diagram 9 STATE DIAGRAM
+- p.254: 9.23.1 Simple example
+- p.255: 9.24 State description
+- p.255: 9.24 State description 9 STATE DIAGRAM
+- p.255: 9.25 Style for Nested State Body
+- p.256: 9.25 Style for Nested State Body 9 STATE DIAGRAM
+- p.597: 9.1 Simple State . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
+- p.597: 9.10 Point [entryPoint, exitPoint] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+- p.597: 9.11 Pin [inputPin, outputPin] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 242
+- p.597: 9.12 Expansion [expansionInput, expansionOutput] . . . . . . . . . . . . . . . . . . . . . . . . . 243
+- p.597: 9.13 Arrow direction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 244
+- p.597: 9.2 Change state rendering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
+- p.597: 9.3 Composite state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
+- p.597: 9.3.1 Internal sub-state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
+- p.597: 9.3.2 Sub-state to sub-state . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233
+- p.597: 9.4 Long name . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 234
+- p.597: 9.5 History [[H], [H*]] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
+- p.597: 9.6 Fork [fork, join] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 236
+- p.597: 9.7 Concurrent state [–, ||] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237
+- p.597: 9.7.1 Horizontal separator -- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237
+- p.597: 9.7.2 Vertical separator || . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 238
+- p.597: 9.8 Conditional [choice] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 239
+- p.597: 9.9 Stereotypes full example [start, choice, fork, join, end, history, history*] . . . . . . . . . . 239
+- p.597: 9.9.1 Start, choice, fork, join, end . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 239
+- p.597: 9.9.2 History, history* . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+- p.597: 9.9.3 Minimal example with all stereotypes . . . . . . . . . . . . . . . . . . . . . . . . . 241
+- p.598: 9.14 Change line color and style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 245
+- p.598: 9.15 Note . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 245
+- p.598: 9.16 Note on link . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+- p.598: 9.17 More in notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+- p.598: 9.18 Inline color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 247
+- p.598: 9.19 Skinparam . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 248
+- p.598: 9.19.1 Test of all specific skinparam to State Diagrams . . . . . . . . . . . . . . . . . . . 249
+- p.598: 9.20 Changing style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249
+- p.598: 9.21 Change state color and style (inline style) . . . . . . . . . . . . . . . . . . . . . . . . . . . 251
+- p.598: 9.22 Alias . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 252
+- p.598: 9.23 Display JSON Data on State diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+- p.598: 9.23.1 Simple example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+- p.598: 9.24 State description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254
+- p.598: 9.25 Style for Nested State Body . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254

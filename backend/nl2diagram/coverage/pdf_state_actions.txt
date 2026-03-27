@@ -1,0 +1,3 @@
+QUERY	entry/	PAGES	-
+QUERY	exit/	PAGES	-
+QUERY	do/	PAGES	-

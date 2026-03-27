@@ -1,0 +1,166 @@
+# Chapter 1 headings
+
+- p.2: 1.1 Basic Examples
+- p.3: 1.2 Declaring participant
+- p.3: 1.2 Declaring participant 1 SEQUENCE DIAGRAM
+- p.4: 1.2 Declaring participant 1 SEQUENCE DIAGRAM
+- p.5: 1.3 Declaring participant on multiline
+- p.5: 1.3 Declaring participant on multiline 1 SEQUENCE DIAGRAM
+- p.5: 1.4 Use non-letters in participants
+- p.6: 1.5 Message to Self
+- p.6: 1.5 Message to Self 1 SEQUENCE DIAGRAM
+- p.6: 1.6 Text alignment
+- p.6: 1.6.1 T ext of response message below the arrow
+- p.7: 1.7 Change arrow style
+- p.7: 1.7 Change arrow style 1 SEQUENCE DIAGRAM
+- p.7: 1.8 Change arrow color
+- p.8: 1.9 Message sequence numbering
+- p.8: 1.9 Message sequence numbering 1 SEQUENCE DIAGRAM
+- p.9: 1.9 Message sequence numbering 1 SEQUENCE DIAGRAM
+- p.10: 1.9 Message sequence numbering 1 SEQUENCE DIAGRAM
+- p.11: 1.10 Page Title, Header and Footer
+- p.11: 1.10 Page Title, Header and Footer 1 SEQUENCE DIAGRAM
+- p.12: 1.11 Splitting diagrams
+- p.12: 1.11 Splitting diagrams 1 SEQUENCE DIAGRAM
+- p.12: 1.12 Grouping message
+- p.13: 1.13 Secondary group label
+- p.13: 1.13 Secondary group label 1 SEQUENCE DIAGRAM
+- p.14: 1.14 Notes on messages
+- p.14: 1.14 Notes on messages 1 SEQUENCE DIAGRAM
+- p.15: 1.15 Some other notes
+- p.15: 1.15 Some other notes 1 SEQUENCE DIAGRAM
+- p.16: 1.16 Changing notes shape [hnote, rnote]
+- p.16: 1.16 Changing notes shape [hnote, rnote] 1 SEQUENCE DIAGRAM
+- p.16: 1.17 Note over all participants [across]
+- p.17: 1.18 Several notes aligned at the same level [/]
+- p.17: 1.18 Several notes aligned at the same level [/] 1 SEQUENCE DIAGRAM
+- p.18: 1.19 Creole and HTML
+- p.18: 1.19 Creole and HTML 1 SEQUENCE DIAGRAM
+- p.19: 1.20 Divider or separator
+- p.19: 1.20 Divider or separator 1 SEQUENCE DIAGRAM
+- p.19: 1.21 Reference
+- p.20: 1.22 Delay
+- p.20: 1.22 Delay 1 SEQUENCE DIAGRAM
+- p.20: 1.23 Text wrapping
+- p.21: 1.24 Space
+- p.21: 1.24 Space 1 SEQUENCE DIAGRAM
+- p.21: 1.25 Lifeline Activation and Destruction
+- p.22: 1.25 Lifeline Activation and Destruction 1 SEQUENCE DIAGRAM
+- p.23: 1.26 Return
+- p.23: 1.26 Return 1 SEQUENCE DIAGRAM
+- p.24: 1.27 Participant creation
+- p.24: 1.27 Participant creation 1 SEQUENCE DIAGRAM
+- p.24: 1.28 Shortcut syntax for activation, deactivation, creation
+- p.25: 1.28 Shortcut syntax for activation, deactivation, creation 1 SEQUENCE DIAGRAM
+- p.26: 1.29 Incoming and outgoing messages
+- p.26: 1.29 Incoming and outgoing messages 1 SEQUENCE DIAGRAM
+- p.27: 1.30 Short arrows for incoming and outgoing messages
+- p.27: 1.30 Short arrows for incoming and outgoing messages 1 SEQUENCE DIAGRAM
+- p.28: 1.31 Anchors and Duration
+- p.28: 1.31 Anchors and Duration 1 SEQUENCE DIAGRAM
+- p.28: 1.32 Stereotypes and Spots
+- p.29: 1.33 Position of the stereotypes
+- p.29: 1.33 Position of the stereotypes 1 SEQUENCE DIAGRAM
+- p.30: 1.33.1 T op postion (by default)
+- p.30: 1.33.2 Bottom postion
+- p.30: 1.34 More information on titles
+- p.30: 1.34 More information on titles 1 SEQUENCE DIAGRAM
+- p.31: 1.34 More information on titles 1 SEQUENCE DIAGRAM
+- p.32: 1.35 Participants encompass
+- p.32: 1.35 Participants encompass 1 SEQUENCE DIAGRAM
+- p.33: 1.36 Removing Foot Boxes
+- p.33: 1.36 Removing Foot Boxes 1 SEQUENCE DIAGRAM
+- p.33: 1.37 Skinparam
+- p.34: 1.37 Skinparam 1 SEQUENCE DIAGRAM
+- p.35: 1.38 Changing padding
+- p.35: 1.38 Changing padding 1 SEQUENCE DIAGRAM
+- p.36: 1.39 Appendix: Examples of all arrow type
+- p.36: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.36: 1.39.1 Normal arrow
+- p.37: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.37: 1.39.2 Itself arrow
+- p.38: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.38: 1.39.3 Incoming and outgoing messages (with ’[’, ’]’)
+- p.38: 1.39.4 Incoming messages (with ’[’)
+- p.39: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.40: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.40: 1.39.5 Outgoing messages (with ’]’)
+- p.41: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.41: 1.39.6 Short incoming and outgoing messages (with ’?’)
+- p.41: 1.39.7 Short incoming (with ’?’)
+- p.42: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.42: 1.39.8 Short outgoing (with ’?’)
+- p.43: 1.39 Appendix: Examples of all arrow type 1 SEQUENCE DIAGRAM
+- p.44: 1.40 Specific SkinParameter
+- p.44: 1.40 Specific SkinParameter 1 SEQUENCE DIAGRAM
+- p.44: 1.40.1 By default
+- p.44: 1.40.2 LifelineStrategy
+- p.44: 1.40.3 style strictuml
+- p.45: 1.41 Hide unlinked participant
+- p.45: 1.41 Hide unlinked participant 1 SEQUENCE DIAGRAM
+- p.45: 1.42 Color a group message
+- p.46: 1.43 Mainframe
+- p.46: 1.43 Mainframe 1 SEQUENCE DIAGRAM
+- p.46: 1.44 Slanted or odd arrows
+- p.47: 1.44 Slanted or odd arrows 1 SEQUENCE DIAGRAM
+- p.48: 1.45 Parallel messages (with teoz)
+- p.48: 1.45 Parallel messages (with teoz) 1 SEQUENCE DIAGRAM
+- p.592: 1.1 Basic Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+- p.592: 1.10 Page Title, Header and Footer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+- p.592: 1.11 Splitting diagrams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+- p.592: 1.12 Grouping message . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+- p.592: 1.13 Secondary group label . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+- p.592: 1.14 Notes on messages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+- p.592: 1.15 Some other notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+- p.592: 1.16 Changing notes shape [hnote, rnote] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+- p.592: 1.17 Note over all participants [across] . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+- p.592: 1.18 Several notes aligned at the same level [/] . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+- p.592: 1.19 Creole and HTML . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+- p.592: 1.2 Declaring participant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+- p.592: 1.20 Divider or separator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+- p.592: 1.21 Reference . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+- p.592: 1.22 Delay . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+- p.592: 1.23 Text wrapping . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+- p.592: 1.24 Space . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+- p.592: 1.25 Lifeline Activation and Destruction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+- p.592: 1.26 Return . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+- p.592: 1.27 Participant creation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+- p.592: 1.28 Shortcut syntax for activation, deactivation, creation . . . . . . . . . . . . . . . . . . . . . 23
+- p.592: 1.29 Incoming and outgoing messages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+- p.592: 1.3 Declaring participant on multiline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+- p.592: 1.30 Short arrows for incoming and outgoing messages . . . . . . . . . . . . . . . . . . . . . . . 26
+- p.592: 1.31 Anchors and Duration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+- p.592: 1.32 Stereotypes and Spots . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+- p.592: 1.33 Position of the stereotypes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+- p.592: 1.33.1 Top postion (by default) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+- p.592: 1.33.2 Bottom postion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+- p.592: 1.34 More information on titles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+- p.592: 1.35 Participants encompass . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+- p.592: 1.36 Removing Foot Boxes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+- p.592: 1.37 Skinparam . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+- p.592: 1.38 Changing padding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+- p.592: 1.39 Appendix: Examples of all arrow type . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+- p.592: 1.39.1 Normal arrow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+- p.592: 1.39.2 Itself arrow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+- p.592: 1.39.3 Incoming and outgoing messages (with ’[’, ’]’) . . . . . . . . . . . . . . . . . . . . . 37
+- p.592: 1.39.4 Incoming messages (with ’[’) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+- p.592: 1.39.5 Outgoing messages (with ’]’) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+- p.592: 1.39.6 Short incoming and outgoing messages (with ’?’) . . . . . . . . . . . . . . . . . . . 40
+- p.592: 1.39.7 Short incoming (with ’?’) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+- p.592: 1.39.8 Short outgoing (with ’?’) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+- p.592: 1.4 Use non-letters in participants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+- p.592: 1.40 Specific SkinParameter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+- p.592: 1.40.1 By default . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+- p.592: 1.40.2 LifelineStrategy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+- p.592: 1.40.3 style strictuml . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+- p.592: 1.41 Hide unlinked participant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+- p.592: 1.5 Message to Self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+- p.592: 1.6 Text alignment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+- p.592: 1.6.1 Text of response message below the arrow . . . . . . . . . . . . . . . . . . . . . . . 5
+- p.592: 1.7 Change arrow style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+- p.592: 1.8 Change arrow color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+- p.592: 1.9 Message sequence numbering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+- p.593: 1.42 Color a group message . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+- p.593: 1.43 Mainframe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+- p.593: 1.44 Slanted or odd arrows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+- p.593: 1.45 Parallel messages (with teoz) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47

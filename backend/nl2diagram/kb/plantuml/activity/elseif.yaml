@@ -1,0 +1,48 @@
+id: "activity.elseif.basic"
+diagram_type: "activity"
+topic: "elseif"
+construct: "branch.elseif"
+complexity: "basic"
+requires_closure: true
+version: "1.2025.0"
+title: "Activity branching: elseif"
+intent:
+  - "multiple conditional branches"
+  - "else-if chain"
+syntax: |
+  @startuml
+  start
+  if (condition A) then (yes)
+    :Text 1;
+  elseif (condition B) then (yes)
+    :Text 2;
+  else (no)
+    :Fallback;
+  endif
+  stop
+  @enduml
+rules:
+  - "Use elseif to chain multiple tests"
+  - "Close the whole block with endif"
+examples:
+  - |
+    @startuml
+    start
+    if (status?) then (OK)
+      :Proceed;
+    elseif (status?) then (Retry)
+      :Retry;
+    else (Fail)
+      :Abort;
+    endif
+    stop
+    @enduml
+keywords:
+  - "activity"
+  - "elseif"
+  - "if"
+  - "endif"
+source:
+  doc: "PlantUML Language Reference Guide"
+  section: "6.3.1 Several tests (horizontal mode)"
+  page: 125
