@@ -1,0 +1,72 @@
+{
+  "cases": {
+    "case01": {
+      "attempts": 1,
+      "run_id": "run_dec5182ad8044d9d9ac14c2905eb2407",
+      "status": "completed",
+      "error": null,
+      "error_code": null,
+      "input_chars": 1636,
+      "input_words": 238,
+      "identification_count": 33,
+      "decomposition_chars": 1590,
+      "integration_lines": 28,
+      "plantuml_chars": 1089,
+      "token_usage": {
+        "prompt_tokens": 21061,
+        "completion_tokens": 1391,
+        "total_tokens": 22452
+      },
+      "step_timings_ms": {
+        "workflow_initialization": 3715,
+        "activity_identification": 26440,
+        "structure_decomposition": 23948,
+        "information_integration": 7233,
+        "plantuml_generation": 11276
+      },
+      "total_runtime_ms": 71990,
+      "plantuml_metrics": {
+        "action_nodes": 20,
+        "decision_nodes": 1,
+        "parallel_nodes": 5,
+        "loop_nodes": 1,
+        "total_nodes": 29,
+        "relation_count": 29
+      }
+    },
+    "case02": {
+      "attempts": 1,
+      "run_id": "run_a67df46fafe14763b30dfb400fca414f",
+      "status": "completed",
+      "error": null,
+      "error_code": null,
+      "input_chars": 1723,
+      "input_words": 246,
+      "identification_count": 34,
+      "decomposition_chars": 3637,
+      "integration_lines": 54,
+      "plantuml_chars": 2542,
+      "token_usage": {
+        "prompt_tokens": 41025,
+        "completion_tokens": 2388,
+        "total_tokens": 43413
+      },
+      "step_timings_ms": {
+        "workflow_initialization": 2518,
+        "activity_identification": 32580,
+        "structure_decomposition": 42772,
+        "information_integration": 11150,
+        "plantuml_generation": 17623
+      },
+      "total_runtime_ms": 106038,
+      "plantuml_metrics": {
+        "action_nodes": 35,
+        "decision_nodes": 4,
+        "parallel_nodes": 12,
+        "loop_nodes": 1,
+        "total_nodes": 54,
+        "relation_count": 57
+      }
+    }
+  }
+}

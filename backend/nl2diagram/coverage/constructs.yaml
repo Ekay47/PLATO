@@ -1,6 +1,6 @@
-﻿version: "1.0"
+﻿﻿version: "1.0"
 doc:
-  path: "f:/Project/2026Projects/PLATO/backend/nl2diagram/PlantUML_Language_Reference_Guide_en.pdf"
+  path: "nl2diagram/PlantUML_Language_Reference_Guide_en.pdf"
   version: "1.2025.0"
   title: "PlantUML Language Reference Guide"
 

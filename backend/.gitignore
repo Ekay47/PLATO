@@ -19,7 +19,21 @@ cache/
 *.sqlite
 dist/
 build/
+
+# Local temporary scripts/results
+scripts/*_tmp.py
+scripts/*_tmp.json
 src/utils/
+# Local heavyweight runtime assets
 nl2diagram/*.pdf
 
+# Offline/maintenance assets under nl2diagram (not required by runtime serving path)
+
+nl2diagram/coverage/
+nl2diagram/eval/
+nl2diagram/scripts/
+
+# Runtime knowledge base is still tracked and used online:
+# nl2diagram/kb/plantuml/**/*.yaml
+config.yaml
 config.yaml

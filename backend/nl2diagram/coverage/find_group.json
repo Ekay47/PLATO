@@ -1,5 +1,5 @@
-﻿{
-  "pdf": "F:\\Project\\2026Projects\\PLATO\\backend\\nl2diagram\\PlantUML_Language_Reference_Guide_en.pdf",
+{
+  "pdf": "nl2diagram/PlantUML_Language_Reference_Guide_en.pdf",
   "query": "group",
   "regex": false,
   "page_count": 607,

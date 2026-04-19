@@ -31,6 +31,31 @@ def _ensure_wrapped_uml(code: str) -> str:
     return "@startuml\nstart\n" + c + "\nstop\n@enduml"
 
 
+def _validate_framework_skeleton(text: str) -> bool:
+    if not text or "LEVEL" not in text:
+        return False
+    begin_count = len(re.findall(r"\bLEVEL\s+\d+\s+Begin\b", text, flags=re.IGNORECASE))
+    end_count = len(re.findall(r"\bLEVEL\s+\d+\s+End\b", text, flags=re.IGNORECASE))
+    if begin_count == 0 or begin_count != end_count:
+        return False
+    stack: List[int] = []
+    for line in text.splitlines():
+        b = re.search(r"\bLEVEL\s+(\d+)\s+Begin\b", line, flags=re.IGNORECASE)
+        if b:
+            lvl = int(b.group(1))
+            if stack and lvl > stack[-1] + 1:
+                return False
+            stack.append(lvl)
+            continue
+        e = re.search(r"\bLEVEL\s+(\d+)\s+End\b", line, flags=re.IGNORECASE)
+        if e:
+            lvl = int(e.group(1))
+            if not stack or stack[-1] != lvl:
+                return False
+            stack.pop()
+    return not stack
+
+
 ProgressEmitter = Callable[[str], Awaitable[None]]
 
 
@@ -111,6 +136,7 @@ class LATOWorkflow:
         text: str,
         *,
         activities: Optional[List[str]] = None,
+        framework_description: Optional[str] = None,
         emit: Optional[ProgressEmitter] = None,
         max_level: int = 6,
         max_retry: int = 3,
@@ -122,6 +148,18 @@ class LATOWorkflow:
         if emit:
             enabled = self.nlp_cfg.dependency_provider == "corenlp" and bool(self.nlp_cfg.corenlp_url)
             await emit(f"nlp: dependency_tree={'enabled' if enabled else 'disabled'}")
+        framework_text = (framework_description or "").strip()
+        if not framework_text:
+            framework_text = await self.build_framework_description(
+                text,
+                activities=activities,
+                depend_tree=depend_tree,
+                emit=emit,
+            )
+        if not framework_text:
+            framework_text = "(none)"
+        if emit:
+            await emit(f"framework: chars={len(framework_text) if framework_text != '(none)' else 0}")
 
         former_output = ""
         last_check = ""
@@ -138,6 +176,7 @@ class LATOWorkflow:
             decompose_user = decompose_prompt["human"].format(
                 Examples=examples,
                 Input=(text.strip() + (("\n\n#Activity Identification\n" + ", ".join(activities)) if activities else "")),
+                Framework=framework_text,
                 FormerOutput=former_output + last_check,
                 Level=level,
             )
@@ -146,6 +185,7 @@ class LATOWorkflow:
             verify_user = verify_prompt["human"].format(
                 Examples=examples,
                 Input=text,
+                Framework=framework_text,
                 FormerOutput=former_output,
                 Output=execution,
                 Depend=depend_tree,
@@ -175,6 +215,48 @@ class LATOWorkflow:
                 await emit(f"verify: retry {retry}/{max_retry}")
             if retry >= max_retry:
                 return (former_output + f"\n[Terminated at level {level} after {max_retry} retries. Last check: {verification}]").strip()
+
+    async def build_framework_description(
+        self,
+        text: str,
+        *,
+        activities: Optional[List[str]] = None,
+        depend_tree: Optional[str] = None,
+        emit: Optional[ProgressEmitter] = None,
+        max_depth: int = 6,
+        max_branches: int = 4,
+    ) -> str:
+        if emit:
+            await emit("framework: building")
+        try:
+            prompt = self.assets.load_prompt("framework_from_dependency")
+            stitched = text.strip() + (("\n\n#Activity Identification\n" + ", ".join(activities)) if activities else "")
+            dep = (depend_tree or "").strip()
+            user = prompt["human"].format(
+                Input=stitched,
+                Depend=dep or "(none)",
+                MaxDepth=max_depth,
+                MaxBranches=max_branches,
+            )
+            out = _strip_code_fences(await self.llm.chat(prompt["system"], user, temperature=0.0)).strip()
+            if _validate_framework_skeleton(out):
+                return out
+            # one retry with stricter reminder
+            reminder = (
+                user
+                + "\n\n#Reminder:\n"
+                + "Your previous output was invalid. Ensure balanced LEVEL Begin/End and valid nesting."
+            )
+            out2 = _strip_code_fences(await self.llm.chat(prompt["system"], reminder, temperature=0.0)).strip()
+            if _validate_framework_skeleton(out2):
+                return out2
+        except Exception:
+            if emit:
+                await emit("framework: fallback=1")
+            return ""
+        if emit:
+            await emit("framework: fallback=1")
+        return ""
 
     async def reconstruct(
         self,

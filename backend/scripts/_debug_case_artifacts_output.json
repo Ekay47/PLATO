@@ -1,0 +1,40 @@
+{
+  "case01": {
+    "run_id": "run_bf68545d5de54991a6aee7f53eceb12d",
+    "status": "completed",
+    "error": null,
+    "plantuml_len": 134,
+    "plantuml_head": "@startuml\nstart\nCheck inventory\nif in stock\n  Reserve items\n  Send confirmation email\nelse\n  Handle back-order\nShip order\nstop\n@enduml",
+    "artifacts_keys": [
+      "identification",
+      "decomposition",
+      "integration",
+      "plantuml",
+      "token_usage"
+    ],
+    "token_usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  "case02": {
+    "run_id": "run_9a57a405b8434a149ad0c8906cd6c912",
+    "status": "completed",
+    "error": null,
+    "plantuml_len": 134,
+    "plantuml_head": "@startuml\nstart\nCheck inventory\nif in stock\n  Reserve items\n  Send confirmation email\nelse\n  Handle back-order\nShip order\nstop\n@enduml",
+    "artifacts_keys": [
+      "identification",
+      "decomposition",
+      "integration",
+      "plantuml",
+      "token_usage"
+    ],
+    "token_usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}
